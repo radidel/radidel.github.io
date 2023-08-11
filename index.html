@@ -4,6 +4,12 @@
     <title>Market Research Guide</title>
     <style>
         /* Basic CSS styling for the two-column layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
         .container {
             display: flex;
         }
@@ -11,12 +17,15 @@
         .navigation {
             flex: 1;
             padding: 20px;
-            background-color: #f7f7f7;
+            background-color: #333;
+            color: #fff;
         }
 
-        .explanation {
-            flex: 2;
-            padding: 20px;
+        .navigation h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #fff;
         }
 
         .navigation ul {
@@ -30,17 +39,31 @@
 
         .navigation a {
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
+            color: #fff;
         }
 
         .navigation a:hover {
             color: #ff6600;
         }
+
+        .explanation {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .project-name {
+            background-color: #ff6600;
+            padding: 10px;
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Market Research Guide</h1>
+    <div class="project-name">
+        <h1>Market Research Guide</h1>
+    </div>
 
     <div class="container">
         <div class="navigation">
@@ -62,7 +85,7 @@
             <div class="section" id="overview">
                 <h2>Overview</h2>
                 <p>Welcome to the Market Research Guide. This comprehensive guide aims to provide you with a solid foundation in market research, equipping you with the tools and knowledge necessary to conduct effective market analysis. Whether you're a business professional, a student, or anyone interested in understanding market dynamics, this guide is designed to assist you in navigating the world of market research.</p>
-         
+   
         <h3>Purpose of the Market Research Guide</h3>
         <p>The primary purpose of this guide is to demystify the process of market research. We will cover the essential concepts, methodologies, and steps involved in conducting thorough market analysis. By the end of this guide, you should have a clear understanding of how to gather relevant data, analyze market trends, and make informed decisions based on your findings.</p>
         
