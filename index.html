@@ -1,54 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Overview</title>
+    <title>Overview Page with Dropdown Menu</title>
     <style>
-        body {
-            -webkit-text-size-adjust: 100%;
-            font-size: 16px;
-            font-family: Lato, proxima-nova, Helvetica Neue, Arial, sans-serif;
-            font-weight: 400;
-            color: #9b9b9b;
-            box-sizing: border-box;
-            width: 320px;
+        /* Basic CSS styling for the dropdown */
+        .dropdown {
             position: relative;
-            overflow-x: hidden;
-            overflow-y: scroll;
-            height: 100%;
+            display: inline-block;
         }
-        h1, h2 {
-            color: #000; /* Override heading color */
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
     </style>
 </head>
 <body>
     <h1>Overview</h1>
-    <p>Welcome to the overview page. This is a sample page structure with various sections:</p>
 
-    <h2>Methodologies</h2>
+    <div class="dropdown">
+        <button>Jump to</button>
+        <div class="dropdown-content">
+            <a href="#methodologies">Methodologies</a>
+            <a href="#internal-analysis">Internal Analysis</a>
+            <a href="#external-analysis">External Analysis</a>
+            <a href="#ethical-considerations">Ethical Considerations</a>
+            <a href="#findings">Present Your Findings</a>
+            <a href="#recommendations">Recommendations</a>
+            <a href="#conclusion">Conclusion</a>
+            <a href="#references">References</a>
+        </div>
+    </div>
+
+    <h2 id="methodologies">Methodologies</h2>
     <p>Describe the methodologies used in your analysis.</p>
 
-    <h2>Internal Analysis</h2>
+    <h2 id="internal-analysis">Internal Analysis</h2>
     <p>Discuss the internal factors affecting your subject.</p>
 
-    <h2>External Analysis</h2>
+    <h2 id="external-analysis">External Analysis</h2>
     <p>Examine external factors such as buyers, competition, suppliers, etc.</p>
 
-    <h2>Ethical Considerations</h2>
+    <h2 id="ethical-considerations">Ethical Considerations</h2>
     <p>Address any ethical considerations in your analysis.</p>
 
-    <h2>Present Your Findings</h2>
+    <h2 id="findings">Present Your Findings</h2>
     <p>Present the results of your analysis.</p>
 
-    <h2>Recommendations</h2>
+    <h2 id="recommendations">Recommendations</h2>
     <p>Provide recommendations based on your findings.</p>
 
-    <h2>Conclusion</h2>
+    <h2 id="conclusion">Conclusion</h2>
     <p>Summarize the key points and conclusions.</p>
 
-    <h2>References</h2>
+    <h2 id="references">References</h2>
     <p>Include a list of your references and sources.</p>
 </body>
 </html>
