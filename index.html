@@ -1,42 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Market Research Overview Page with Dropdown Menu</title>
+    <title>Market Research Guide</title>
     <style>
-        /* Basic CSS styling for the dropdown */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-        }
-
-        .header {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
+        /* Basic CSS styling for the dropdown and two-column layout */
+        .container {
+            display: flex;
         }
 
         .dropdown {
-            position: relative;
-            display: inline-block;
-            margin-right: 20px;
+            flex: 1;
+            padding: 20px;
+            background-color: #f7f7f7;
         }
 
-        .dropdown button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
+        .explanation {
+            flex: 2;
+            padding: 20px;
         }
 
         .dropdown-content {
             display: none;
-            position: absolute;
             background-color: #f9f9f9;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -46,43 +30,31 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-
-        .section {
-            background-color: white;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
-            border-radius: 5px;
-        }
-
-        h2 {
-            color: #3498db;
-        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Market Research</h1>
-    </div>
+    <h1>Market Research Guide</h1>
 
-    <div class="dropdown">
-        <button>Jump to</button>
-        <div class="dropdown-content">
-            <a href="#overview">Overview</a>
-            <a href="#methodologies">Methodologies</a>
-            <a href="#internal-analysis">Internal Analysis</a>
-            <a href="#external-analysis">External Analysis</a>
-            <a href="#ethical-considerations">Ethical Considerations</a>
-            <a href="#findings">Present Your Findings</a>
-            <a href="#recommendations">Recommendations</a>
-            <a href="#conclusion">Conclusion</a>
-            <a href="#references">References</a>
+    <div class="container">
+        <div class="dropdown">
+            <h2>Jump to</h2>
+            <div class="dropdown-content">
+                <a href="#overview">Overview</a>
+                <a href="#methodologies">Methodologies</a>
+                <a href="#internal-analysis">Internal Analysis</a>
+                <a href="#external-analysis">External Analysis</a>
+                <a href="#ethical-considerations">Ethical Considerations</a>
+                <a href="#findings">Present Your Findings</a>
+                <a href="#recommendations">Recommendations</a>
+                <a href="#conclusion">Conclusion</a>
+                <a href="#references">References</a>
+            </div>
         </div>
-    </div>
 
-    <div class="section" id="overview">
-        <h2>Overview</h2>
-        <p>Welcome to the Market Research Guide. This comprehensive guide aims to provide you with a solid foundation in market research, equipping you with the tools and knowledge necessary to conduct effective market analysis. Whether you're a business professional, a student, or anyone interested in understanding market dynamics, this guide is designed to assist you in navigating the world of market research.</p>
+        <div class="explanation">
+            <div class="section" id="overview">
+                <h2>Overview</h2>
+                <p>Welcome to the Market Research Guide. This comprehensive guide aims to provide you with a solid foundation in market research, equipping you with the tools and knowledge necessary to conduct effective market analysis. Whether you're a business professional, a student, or anyone interested in understanding market dynamics, this guide is designed to assist you in navigating the world of market research.</p>
         
         <h3>Purpose of the Market Research Guide</h3>
         <p>The primary purpose of this guide is to demystify the process of market research. We will cover the essential concepts, methodologies, and steps involved in conducting thorough market analysis. By the end of this guide, you should have a clear understanding of how to gather relevant data, analyze market trends, and make informed decisions based on your findings.</p>
