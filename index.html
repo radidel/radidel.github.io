@@ -3,12 +3,12 @@
 <head>
     <title>Market Research Guide</title>
     <style>
-        /* Basic CSS styling for the dropdown and two-column layout */
+        /* Basic CSS styling for the two-column layout */
         .container {
             display: flex;
         }
 
-        .dropdown {
+        .navigation {
             flex: 1;
             padding: 20px;
             background-color: #f7f7f7;
@@ -19,16 +19,23 @@
             padding: 20px;
         }
 
-        .dropdown-content {
-            display: none;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
+        .navigation li {
+            margin-bottom: 10px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            color: #ff6600;
         }
     </style>
 </head>
@@ -36,26 +43,26 @@
     <h1>Market Research Guide</h1>
 
     <div class="container">
-        <div class="dropdown">
+        <div class="navigation">
             <h2>Jump to</h2>
-            <div class="dropdown-content">
-                <a href="#overview">Overview</a>
-                <a href="#methodologies">Methodologies</a>
-                <a href="#internal-analysis">Internal Analysis</a>
-                <a href="#external-analysis">External Analysis</a>
-                <a href="#ethical-considerations">Ethical Considerations</a>
-                <a href="#findings">Present Your Findings</a>
-                <a href="#recommendations">Recommendations</a>
-                <a href="#conclusion">Conclusion</a>
-                <a href="#references">References</a>
-            </div>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#methodologies">Methodologies</a></li>
+                <li><a href="#internal-analysis">Internal Analysis</a></li>
+                <li><a href="#external-analysis">External Analysis</a></li>
+                <li><a href="#ethical-considerations">Ethical Considerations</a></li>
+                <li><a href="#findings">Present Your Findings</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
         </div>
 
         <div class="explanation">
             <div class="section" id="overview">
                 <h2>Overview</h2>
                 <p>Welcome to the Market Research Guide. This comprehensive guide aims to provide you with a solid foundation in market research, equipping you with the tools and knowledge necessary to conduct effective market analysis. Whether you're a business professional, a student, or anyone interested in understanding market dynamics, this guide is designed to assist you in navigating the world of market research.</p>
-        
+         
         <h3>Purpose of the Market Research Guide</h3>
         <p>The primary purpose of this guide is to demystify the process of market research. We will cover the essential concepts, methodologies, and steps involved in conducting thorough market analysis. By the end of this guide, you should have a clear understanding of how to gather relevant data, analyze market trends, and make informed decisions based on your findings.</p>
         
