@@ -101,6 +101,16 @@
             font-size: 20px;
             margin-bottom: px;
         }
+        .image-container {
+            flex: 4; /* Use flex property to occupy 80% width */
+            overflow: hidden; /* Hide overflow from the image */
+        }
+
+        .image-container img {
+            width: 80%; /* Set image width to 100% to fill the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure image respects block layout */
+        }
 
         /* Show the "Overview" section by default */
         .section {
@@ -130,6 +140,9 @@
         <div class="wy-form">
             <input type="text" placeholder="Search..." id="search-input">
             <button onclick="searchContent()">Search</button>
+        </div>
+        <div class="image-container">
+            <img src="https://www.questionpro.com/blog/wp-content/uploads/2018/04/What-is-Market-Research.jpg" alt="Market Research Image">
         </div>
     </div>
 
