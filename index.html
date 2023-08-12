@@ -107,16 +107,16 @@
             margin-bottom: px;
         }
         .image-container {
-            flex: 4; /* Use flex property to occupy 80% width */
-            overflow: hidden;
-
-             /* Hide overflow from the image */
+            flex: 1;
+            max-width: 80%;
+            margin-left: 20px;
         }
 
         .image-container img {
-            width: 80%; /* Set image width to 100% to fill the container */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Ensure image respects block layout */
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
 
         /* Show the "Overview" section by default */
