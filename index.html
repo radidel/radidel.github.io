@@ -58,7 +58,25 @@
             font-size: 28px;
             margin-bottom: 20px;
         }
+
+        /* Show the "Overview" section by default */
+        .section {
+            display: none;
+        }
+
+        .section#overview {
+            display: block;
+        }
     </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName("section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(sectionId).style.display = "block";
+        }
+    </script>
 </head>
 <body>
     <div class="project-name">
@@ -70,15 +88,15 @@
         <div class="navigation">
             <h2>Home</h2>
             <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#methodologies">Methodologies</a></li>
-                <li><a href="#internal-analysis">Internal Analysis</a></li>
-                <li><a href="#external-analysis">External Analysis</a></li>
-                <li><a href="#ethical-considerations">Ethical Considerations</a></li>
-                <li><a href="#findings">Present Your Findings</a></li>
-                <li><a href="#recommendations">Recommendations</a></li>
-                <li><a href="#conclusion">Conclusion</a></li>
-                <li><a href="#references">References</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('overview')">Overview</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('methodologies')">Methodologies</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('internal-analysis')">Internal Analysis</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('external-analysis')">External Analysis</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('ethical-considerations')">Ethical Considerations</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('findings')">Present Your Findings</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('recommendations')">Recommendations</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('conclusion')">Conclusion</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('references')">References</a></li>
             </ul>
         </div>
 
@@ -87,27 +105,27 @@
                 <h2>Overview</h2>
                 <p>Welcome to the Market Research Guide. This comprehensive guide aims to provide you with a solid foundation in market research, equipping you with the tools and knowledge necessary to conduct effective market analysis. Whether you're a business professional, a student, or anyone interested in understanding market dynamics, this guide is designed to assist you in navigating the world of market research.</p>
    
-        <h3>Purpose of the Market Research Guide</h3>
-        <p>The primary purpose of this guide is to demystify the process of market research. We will cover the essential concepts, methodologies, and steps involved in conducting thorough market analysis. By the end of this guide, you should have a clear understanding of how to gather relevant data, analyze market trends, and make informed decisions based on your findings.</p>
+                <h3>Purpose of the Market Research Guide</h3>
+                <p>The primary purpose of this guide is to demystify the process of market research. We will cover the essential concepts, methodologies, and steps involved in conducting thorough market analysis. By the end of this guide, you should have a clear understanding of how to gather relevant data, analyze market trends, and make informed decisions based on your findings.</p>
         
-        <h3>Benefits of Market Research</h3>
-        <p>Market research is a powerful tool that can provide valuable insights for businesses and individuals. By conducting proper market research, you can:</p>
-        <ul>
-            <li>Identify market opportunities and niches</li>
-            <li>Understand customer needs and preferences</li>
-            <li>Evaluate your competition</li>
-            <li>Minimize risks by making informed decisions</li>
-            <li>Develop effective marketing strategies</li>
-            <li>Enhance product development</li>
-        </ul>
+                <h3>Benefits of Market Research</h3>
+                <p>Market research is a powerful tool that can provide valuable insights for businesses and individuals. By conducting proper market research, you can:</p>
+                <ul>
+                    <li>Identify market opportunities and niches</li>
+                    <li>Understand customer needs and preferences</li>
+                    <li>Evaluate your competition</li>
+                    <li>Minimize risks by making informed decisions</li>
+                    <li>Develop effective marketing strategies</li>
+                    <li>Enhance product development</li>
+                </ul>
         
-        <p>Throughout this guide, we'll cover these aspects and more, giving you a comprehensive understanding of market research and its practical applications. Let's begin this exciting journey into the world of market analysis!</p>
-    </div>
+                <p>Throughout this guide, we'll cover these aspects and more, giving you a comprehensive understanding of market research and its practical applications. Let's begin this exciting journey into the world of market analysis!</p>
+            </div>
 
-    <div class="section" id="methodologies">
-        <h2>Methodologies</h2>
-        <p>Describe the methodologies used in your market research.</p>
-    </div>
+            <div class="section" id="methodologies">
+                <h2>Methodologies</h2>
+                <p>Describe the methodologies used in your market research.</p>
+            </div>
 
     <div class="section" id="internal-analysis">
         <h2>Internal Analysis</h2>
