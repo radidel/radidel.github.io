@@ -1,387 +1,246 @@
-<html class="writer-html5" lang="en"><head>
-    <meta charset="utf-8"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/">
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TorchPhysics — TorchPhysics unknown documentation</title>
-        <link rel="stylesheet" href="_static/pygments.css" type="text/css">
-        <link rel="stylesheet" href="_static/css/theme.css" type="text/css">
-      <link rel="canonical" href="https://torchphysics.readthedocs.io/en/latest/readme.html">
-    <!--[if lt IE 9]>
-      <script src="_static/js/html5shiv.min.js"></script>
-    <![endif]-->
-    
-          <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-          <script src="_static/doctools.js"></script>
-          <script src="_static/sphinx_highlight.js"></script>
-          <script async="async" src="/_/static/javascript/readthedocs-doc-embed.js"></script>
-      <script src="_static/js/theme.js"></script>
-      <link rel="index" title="Index" href="genindex.html">
-      <link rel="search" title="Search" href="search.html">
-      <link rel="next" title="The TorchPhysics Tutorial" href="tutorial/main_page.html">
-      <link rel="prev" title="TorchPhysics" href="index.html"> 
-  
-  <!-- RTD Extra Head -->
-  
-  <link rel="stylesheet" href="/_/static/css/readthedocs-doc-embed.css" type="text/css">
-  
-  <script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2023-05-22T14:37:27Z", "builder": "sphinx", "canonical_url": null, "commit": "e85d0770", "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "readme", "programming_language": "py", "project": "torchphysics", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "latest"}</script>
-  
-  <!--
-  Using this variable directly instead of using `JSON.parse` is deprecated.
-  The READTHEDOCS_DATA global variable will be removed in the future.
-  -->
-  <script type="text/javascript">
-  READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
-  </script>
-  
-  <script type="text/javascript" src="/_/static/javascript/readthedocs-analytics.js" async="async"></script>
-  
-  <!-- end RTD <extrahead> -->
-  <script type="text/javascript" src="/_/static/vendor/jquery.js"></script><script src="https://media.ethicalads.io/media/client/beta/ethicalads.min.js" type="text/javascript" async="" id="ethicaladsjs"></script></head>
-  
-  <body class="wy-body-for-nav"> 
-    <div class="wy-grid-for-nav">
-      <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-        <div class="wy-side-scroll">
-          <div class="wy-side-nav-search">
-  
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Market Research Team-17</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Basic CSS styling for the two-column layout */
+        body {
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #010b49;
+            color: #fff;
+            font-size: 14px;
+            padding: 20px;
+            width: 20%;
             
             
-            <a href="index.html" class="icon icon-home">
-              TorchPhysics
-            </a>
-                <div class="version">
-                  latest
+        }
+        .project-name {
+            flex: 2;
+            background-color: #010b49;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 15px;
+            margin-top: px;
+            text-align: left;
+            margin-bottom: px;
+            display: flex;
+            align-items: center;  /* left the content horizontally */
+        }
+        .project-name h1 {
+            margin: 0;
+            font-size: 32px;
+            margin-right: 10px;
+        }
+
+        .project-name p {
+            font-size: 16px;
+            margin: 0   ;
+            opacity: 0.8;
+        }
+        .icon-home {
+            margin-right: 10px; /* Add some space between the icon and text */
+        }
+        .wy-form {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .wy-form input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: auto; /* Prevent child elements from overflowing */
+        
+        }
+
+        .navigation {
+            flex: .5;
+            padding: 30px;
+            background-color: #2b2a2d;
+            color: #fff;
+        }
+
+        .navigation h2 {
+            font-size: 20px;
+            margin-bottom: px;
+            padding-bottom: 10px;
+            border-bottom: px solid #fff;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navigation li {
+            margin-bottom: 10px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navigation a:hover {
+            color: #230749;
+        }
+
+        .explanation {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .project-name {
+            background-color: #010b49;
+            padding: 30px;
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: px;
+        }
+        .image-container {
+            flex: 1;
+            max-width: 80%;
+            margin-left: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Show the "Overview" section by default */
+        .section {
+            display: none;
+        }
+
+        .section#overview {
+            display: block;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName("section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(sectionId).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+       
+        <div class="project-name">
+            <i class="fas fa-home icon-home"></i>
+            <h1>Market Research</h1>
+            <p>by Team-17</p>
+           
+            
+        </div>
+        <div class="wy-form">
+            <input type="text" placeholder="Search..." id="search-input">
+            <button onclick="searchContent()">Search</button>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="navigation">
+            <h2>Home</h2>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('Overview')">Overview</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('methodologies')">Methodologies</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('internal-analysis')">Internal Analysis</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('external-analysis')">External Analysis</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('ethical-considerations')">Ethical Considerations</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('findings')">Present Your Findings</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('recommendations')">Recommendations</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('conclusion')">Conclusion</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('references')">References</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('references')">Feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="explanation">
+            <div class="section" id="overview">
+                <h2>Overview</h2>
+                <p>Welcome to the Market Research Guide. This comprehensive guide aims to provide you with a solid foundation in market research, equipping you with the tools and knowledge necessary to conduct effective market analysis. Whether you're a business professional, a student, or anyone interested in understanding market dynamics, this guide is designed to assist you in navigating the world of market research.</p>
+                
+                <div class="section" id="overview">
+                    
+                    <ul>
+                                <li class="MR-12"><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('introduction')">Introduction</a></li>
+                                <li class="MR-12"><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('purposes-objectives')">Purposes and Objectives</a></li>
+                                <li class="MR-12"><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('scope-coverage')">Scope and Coverage</a></li>
+                                <li class="MR-12"><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('benefits')">Benefits</a></li>
+                                <li class="MR-12"><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('examples')">Examples</a></li>
+                                <li class="MR-12"><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('acknowledgment')">Acknowledgment</a></li>
+                                <li class="MR-12"><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('distribution')">Distribution</a></li>
+                                <li class="MR-12"><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('updates')">Updates</a></li>
+                                <li class="MR-12"><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('contact-info')">Contact Information</a></li>
+                            
+                    </ul>
                 </div>
-  <div role="search">
-    <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs">
-      <input type="hidden" name="check_keywords" value="yes">
-      <input type="hidden" name="area" value="default">
-    </form>
-  </div>
-          </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-                <ul class="current">
-  <li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
-  <li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
-  <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
-  <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
-  <li class="toctree-l2"><a class="reference internal" href="#about">About</a></li>
-  <li class="toctree-l2"><a class="reference internal" href="#contribute">Contribute</a></li>
-  <li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
-  <li class="toctree-l2"><a class="reference internal" href="#bibliography">Bibliography</a></li>
-  </ul>
-  </li>
-  <li class="toctree-l1"><a class="reference internal" href="tutorial/main_page.html">Tutorial</a></li>
-  <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-  </ul>
-  <p class="caption" role="heading"><span class="caption-text">API</span></p>
-  <ul>
-  <li class="toctree-l1"><a class="reference internal" href="api/torchphysics.problem.conditions.html">Conditions</a></li>
-  <li class="toctree-l1"><a class="reference internal" href="api/torchphysics.problem.domains.html">Domains</a></li>
-  <li class="toctree-l1"><a class="reference internal" href="api/torchphysics.models.html">Models</a></li>
-  <li class="toctree-l1"><a class="reference internal" href="api/torchphysics.problem.samplers.html">Sampler</a></li>
-  <li class="toctree-l1"><a class="reference internal" href="api/torchphysics.html">Solver</a></li>
-  <li class="toctree-l1"><a class="reference internal" href="api/torchphysics.problem.spaces.html">Spaces</a></li>
-  <li class="toctree-l1"><a class="reference internal" href="api/torchphysics.utils.html">Utils</a></li>
-  </ul>
-  
-          </div>
-        </div>
-      </nav>
-  
-      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu">
-            <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-            <a href="index.html">TorchPhysics</a>
-        </nav>
-  
-        <div class="wy-nav-content">
-          <div class="rst-content">
-            <div role="navigation" aria-label="Page navigation">
-    <ul class="wy-breadcrumbs">
-        <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-        <li class="breadcrumb-item active">TorchPhysics</li>
-        <li class="wy-breadcrumbs-aside">
-                <a href="https://github.com/TomF98/torchphysics/blob/main/docs/readme.rst" class="fa fa-github"> Edit on GitHub</a>
-        </li>
-    </ul>
-    <hr>
-  </div>
-            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-             <div itemprop="articleBody">
-               
-    <section id="torchphysics">
-  <span id="readme"></span><h1>TorchPhysics<a class="headerlink" href="#torchphysics" title="Permalink to this heading"></a></h1>
-  <p>TorchPhysics is a Python library of (mesh-free) deep learning methods to solve differential equations.
-  You can use TorchPhysics e.g. to</p>
-  <ul class="simple">
-  <li><p>solve ordinary and partial differential equations</p></li>
-  <li><p>train a neural network to approximate solutions for different parameters</p></li>
-  <li><p>solve inverse problems and interpolate external data</p></li>
-  </ul>
-  <p>The following approaches are implemented using high-level concepts to make their usage as easy
-  as possible:</p>
-  <ul class="simple">
-  <li><p>physics-informed neural networks (PINN) <a class="footnote-reference brackets" href="#id8" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></li>
-  <li><p>QRes <a class="footnote-reference brackets" href="#id9" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></li>
-  <li><p>the Deep Ritz method <a class="footnote-reference brackets" href="#id10" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p></li>
-  <li><p>DeepONets <a class="footnote-reference brackets" href="#id11" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a> and Physics-Informed DeepONets <a class="footnote-reference brackets" href="#id12" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a></p></li>
-  </ul>
-  <p>We aim to also include further implementations in the future.</p>
-  <p>TorchPhysics is build upon the machine learning library <a class="reference external" href="https://pytorch.org/">PyTorch</a>.</p>
-  <section id="features">
-  <h2>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
-  <p>The Goal of this library is to create a basic framework that can be used in many
-  different applications and with different deep learning methods.
-  To this end, TorchPhysics aims at a:</p>
-  <ul class="simple">
-  <li><p>modular and expandable structure</p></li>
-  <li><p>easy to understand code and clean documentation</p></li>
-  <li><p>intuitive and compact way to transfer the mathematical problem into code</p></li>
-  <li><p>reliable and well tested code basis</p></li>
-  </ul>
-  <p>Some built-in features are:</p>
-  <ul class="simple">
-  <li><p>mesh free domain generation. With pre implemented domain types:
-  <em>Point, Interval, Parallelogram, Circle, Triangle and Sphere</em></p></li>
-  <li><p>loading external created objects, thanks to a soft dependency on <a class="reference external" href="https://github.com/mikedh/trimesh">Trimesh</a>
-  and <a class="reference external" href="https://github.com/shapely/shapely">Shapely</a></p></li>
-  <li><p>creating complex domains with the boolean operators <em>Union</em>, <em>Cut</em> and <em>Intersection</em>
-  and higher dimensional objects over the Cartesian product</p></li>
-  <li><p>allowing interdependence of different domains, e.g. creating moving domains</p></li>
-  <li><p>different point sampling methods for every domain:
-  <em>RandomUniform, Grid, Gaussian, Latin hypercube, Adaptive</em> and some more for specific domains</p></li>
-  <li><p>different operators to easily define a differential equation</p></li>
-  <li><p>pre implemented fully connected neural network and easy implementation
-  of additional model structures</p></li>
-  <li><p>sequentially or parallel evaluation/training of different neural networks</p></li>
-  <li><p>normalization layers and adaptive weights <a class="footnote-reference brackets" href="#id13" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a> to speed up the training process</p></li>
-  <li><p>powerful and versatile training thanks to <a class="reference external" href="https://www.pytorchlightning.ai/">PyTorch Lightning</a></p>
-  <ul>
-  <li><p>many options for optimizers and learning rate control</p></li>
-  <li><p>monitoring the loss of individual conditions while training</p></li>
-  </ul>
-  </li>
-  </ul>
-  </section>
-  <section id="getting-started">
-  <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
-  <p>To learn the functionality and usage of TorchPhysics we recommend
-  to have a look at the following sections:</p>
-  <ul class="simple">
-  <li><p><a class="reference external" href="https://torchphysics.readthedocs.io/en/latest/tutorial/tutorial_start.html">Tutorial: Understanding the structure of TorchPhysics</a></p></li>
-  <li><p><a class="reference external" href="https://github.com/boschresearch/torchphysics/tree/main/examples">Examples: Different applications with detailed explanations</a></p></li>
-  <li><p><a class="reference external" href="https://torchphysics.readthedocs.io/en/latest/api/modules.html">Documentation</a></p></li>
-  </ul>
-  </section>
-  <section id="installation">
-  <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
-  <p>TorchPhysics reqiueres the follwing dependencies to be installed:</p>
-  <ul class="simple">
-  <li><p><a class="reference external" href="https://pytorch.org/">PyTorch</a> &gt;= 1.7.1, &lt; 2.0.0</p></li>
-  <li><p><a class="reference external" href="https://www.pytorchlightning.ai/">PyTorch Lightning</a> &gt;= 1.3.4, &lt; 2.0.0</p></li>
-  <li><p><a class="reference external" href="https://numpy.org/">Numpy</a> &gt;= 1.20.2</p></li>
-  <li><p><a class="reference external" href="https://matplotlib.org/">Matplotlib</a> &gt;= 3.0.0</p></li>
-  <li><p><a class="reference external" href="https://scipy.org/">Scipy</a> &gt;= 1.6.3</p></li>
-  </ul>
-  <p>Installing TorchPhysics with <code class="docutils literal notranslate"><span class="pre">pip</span></code>, automatically downloads everything that is needed:</p>
-  <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">torchphysics</span>
-  </pre></div>
-  </div>
-  <p>Additionally, to use the <code class="docutils literal notranslate"><span class="pre">Shapely</span></code> and <code class="docutils literal notranslate"><span class="pre">Trimesh</span></code> functionalities, install the library
-  with the option <code class="docutils literal notranslate"><span class="pre">all</span></code>:</p>
-  <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">torchphysics</span><span class="p">[</span><span class="nb">all</span><span class="p">]</span>
-  </pre></div>
-  </div>
-  <p>If you want to add functionalities or modify the code. We recommend copying the
-  repository and install it locally:</p>
-  <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">boschresearch</span><span class="o">/</span><span class="n">torchphysics</span>
-  <span class="n">pip</span> <span class="n">install</span> <span class="o">.</span>
-  </pre></div>
-  </div>
-  </section>
-  <section id="about">
-  <h2>About<a class="headerlink" href="#about" title="Permalink to this heading"></a></h2>
-  <p>TorchPhysics was originally developed by Nick Heilenkötter and Tom Freudenberg,
-  as part of a <a class="reference external" href="http://www.math.uni-bremen.de/zetem/cms/detail.php?template=modellierungsseminar">seminar project</a> at the <a class="reference external" href="https://www.uni-bremen.de/en/">University of Bremen</a>, in cooperation with the <a class="reference external" href="https://www.bosch.de/en/">Robert Bosch GmbH</a>.
-  Special thanks belong to Felix Hildebrand, Uwe Iben, Daniel Christopher Kreuter and Johannes Mueller,
-  at the Robert Bosch GmbH, for support and supervision while creating this library.</p>
-  </section>
-  <section id="contribute">
-  <h2>Contribute<a class="headerlink" href="#contribute" title="Permalink to this heading"></a></h2>
-  <p>If you are missing a feature or detect a bug or unexpected behaviour while using this library, feel free to open
-  an issue or a pull request in <a class="reference external" href="https://github.com/boschresearch/torchphysics">GitHub</a> or contact the authors. Since we developed the code as a student project
-  during a seminar, we cannot guarantee every feature to work properly. However, we are happy about all contributions
-  since we aim to develop a reliable code basis and extend the library to include other approaches.</p>
-  </section>
-  <section id="license">
-  <h2>License<a class="headerlink" href="#license" title="Permalink to this heading"></a></h2>
-  <p>TorchPhysics uses an Apache License, see the <a class="reference external" href="https://github.com/boschresearch/torchphysics/blob/main/LICENSE.txt">LICENSE</a> file.</p>
-  </section>
-  <section id="bibliography">
-  <h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this heading"></a></h2>
-  <aside class="footnote-list brackets">
-  <aside class="footnote brackets" id="id8" role="note">
-  <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-  <p>Raissi, Perdikaris und Karniadakis, “Physics-informed neuralnetworks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations”, 2019.</p>
-  </aside>
-  <aside class="footnote brackets" id="id9" role="note">
-  <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
-  <p>Bu and Karpatne, “Quadratic Residual Networks: A New Class of Neural Networks for Solving Forward and Inverse Problems in Physics Involving PDEs”, 2021</p>
-  </aside>
-  <aside class="footnote brackets" id="id10" role="note">
-  <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
-  <p>E and Yu, “The Deep Ritz method: A deep learning-based numerical algorithm for solving variational problems”, 2017</p>
-  </aside>
-  <aside class="footnote brackets" id="id11" role="note">
-  <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
-  <p>Lu, Jin and Karniadakis, “DeepONet: Learning nonlinear operators for identifying differential equations based on the universal approximation theorem of operators”, 2020</p>
-  </aside>
-  <aside class="footnote brackets" id="id12" role="note">
-  <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">5</a><span class="fn-bracket">]</span></span>
-  <p>Wang, Wang and Perdikaris, “Learning the solution operator of parametric partial differential equations with physics-informed DeepOnets”, 2021</p>
-  </aside>
-  <aside class="footnote brackets" id="id13" role="note">
-  <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">6</a><span class="fn-bracket">]</span></span>
-  <p>McClenny und Braga-Neto, “Self-Adaptive Physics-Informed NeuralNetworks using a Soft Attention Mechanism”, 2020</p>
-  </aside>
-  </aside>
-  </section>
-  </section>
-  
-  
-             </div>
+   
             </div>
-            <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-          <a href="index.html" class="btn btn-neutral float-left" title="TorchPhysics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-          <a href="tutorial/main_page.html" class="btn btn-neutral float-right" title="The TorchPhysics Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-      </div>
-  
-    <hr><div><div id="rtd-sidebar" data-ea-publisher="readthedocs" data-ea-type="image" data-ea-manual="true" data-ea-style="stickybox" class="ethical-rtd" data-ea-keywords="deep-learning|differential-equations|machine-learning|neural-networks|odes|pdes|physics-informed-neural-networks|python|pytorch|readthedocs-project-662021|readthedocs-project-torchphysics" data-ea-campaign-types="community|house|paid"></div></div>
-  
-    <div role="contentinfo">
-      <p>© Copyright 2021, nick7.
-        <span class="commit">Revision <code>e85d0770</code>.
-        </span></p>
-    </div>
-  
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-      <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-      provided by <a href="https://readthedocs.org">Read the Docs</a>.
-     
-  
-  </footer>
-          </div>
-        </div>
-      </section>
-    </div>
-    
-  
-    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
-      <span class="rst-current-version" data-toggle="rst-current-version">
-        <span class="fa fa-book"> Read the Docs</span>
-        v: latest
-        <span class="fa fa-caret-down"></span>
-      </span>
-      <div class="rst-other-versions"><!-- Inserted RTD Footer -->
-  
-  <div class="injected">
-  
-    
-  
-        
-        
-        
-        <dl>
-          <dt>Versions</dt>
-          
-          <dd class="rtd-current-item">
-            <a href="https://torchphysics.readthedocs.io/en/latest/readme.html">latest</a>
-          </dd>
-          
-        </dl>
-        
-        
-  
-        
-        
-        <dl>
-          <dt>Downloads</dt>
-          
-          <dd><a href="//torchphysics.readthedocs.io/_/downloads/en/latest/pdf/">PDF</a></dd>
-          
-        </dl>
-        
-        
-  
-        
-        <dl>
-          
-          <!-- These are kept as relative links for internal installs that are http -->
-          <dt>On Read the Docs</dt>
-          <dd>
-            <a href="//readthedocs.org/projects/torchphysics/">Project Home</a>
-          </dd>
-          <dd>
-            <a href="//readthedocs.org/projects/torchphysics/builds/">Builds</a>
-          </dd>
-          <dd>
-            <a href="//readthedocs.org/projects/torchphysics/downloads/">Downloads</a>
-          </dd>
-        </dl>
-        
-  
-        
-  
-        
-        <dl>
-          <dt>On GitHub</dt>
-          <dd>
-            <a href="https://github.com/TomF98/torchphysics/blob/main/docs/readme.rst">View</a>
-          </dd>
-          
-          <dd>
-            <a href="https://github.com/TomF98/torchphysics/edit/main/docs/readme.rst">Edit</a>
-          </dd>
-          
-        </dl>
-        
-        
-  
-        
-        <dl>
-          <dt>Search</dt>
-          <dd>
-            <div style="padding: 6px;">
-              
-              <form id="flyout-search-form" class="wy-form" target="_blank" action="//readthedocs.org/projects/torchphysics/search/" method="get">
-                <input type="text" name="q" aria-label="Search docs" placeholder="Search docs">
-                </form>
+
+            <div class="section" id="methodologies">
+                <h2>Methodologies</h2>
+                <p>Describe the methodologies used in your market research.</p>
             </div>
-          </dd>
-        </dl>
-        
-  
-        <hr>
-  
-        
-          <small>
-            <span>Hosted by <a href="https://readthedocs.org">Read the Docs</a></span>
-            <span> · </span>
-            <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
-          </small>
-        
-  
-        
-  
-  </div>
-  </div>
+
+    <div class="section" id="internal-analysis">
+        <h2>Internal Analysis</h2>
+        <p>Discuss the internal factors affecting the subject of your market research.</p>
     </div>
-  <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script> 
-  
-  
-  </body></html>
+
+    <div class="section" id="external-analysis">
+        <h2>External Analysis</h2>
+        <p>Examine external factors such as buyers, competition, suppliers, etc. in your market research.</p>
+    </div>
+
+    <div class="section" id="ethical-considerations">
+        <h2>Ethical Considerations</h2>
+        <p>Address any ethical considerations in your market research.</p>
+    </div>
+
+    <div class="section" id="findings">
+        <h2>Present Your Findings</h2>
+        <p>Present the results of your market research.</p>
+    </div>
+
+    <div class="section" id="recommendations">
+        <h2>Recommendations</h2>
+        <p>Provide recommendations based on the findings of your market research.</p>
+    </div>
+
+    <div class="section" id="conclusion">
+        <h2>Conclusion</h2>
+        <p>Summarize the key points and conclusions of your market research.</p>
+    </div>
+
+    <div class="section" id="references">
+        <h2>References</h2>
+        <p>Include a list of references and sources for your market research.</p>
+    </div>
+    <div class="section" id="feedback">
+        <h2>feedback</h2>
+        <p>Include a list of feedback and sources for your market research.</p>
+    </div>
+</body>
+</html>
