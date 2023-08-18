@@ -18,7 +18,31 @@
             padding: 20px;
             width: 20%;
             
-            
+        /* Styles for the introduction subsection */
+.subsection {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subsection-title {
+    font-size: 24px;
+    color: #010b49;
+    margin-bottom: 10px;
+}
+
+.subsection-content {
+    font-size: 16px;
+    color: #333;
+}
+
+.subsection-description {
+    margin: 10px 0;
+    line-height: 1.5;
+}    
         }
         .project-name {
             flex: 2;
@@ -236,10 +260,12 @@
 <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('contact-info')">Contact Information</a></li>       
       </ul>
 
-                    <div class="subsection" id="introduction" style="display: none;">
-    <h3>Introduction</h3>
-    <p>Market research is an organized effort to gather information about target markets and customers.</p>
-    <p>A market research guide is a comprehensive and structured resource that provides individuals, businesses, and researchers with detailed instructions, methodologies, and insights to effectively conduct market research.</p>
+      <div class="subsection" id="introduction" style="display: none;">
+    <h3 class="subsection-title">Introduction</h3>
+    <div class="subsection-content">
+        <p class="subsection-description">Market research is an organized effort to gather information about target markets and customers.</p>
+        <p class="subsection-description">A market research guide is a comprehensive and structured resource that provides individuals, businesses, and researchers with detailed instructions, methodologies, and insights to effectively conduct market research.</p>
+    </div>
 </div>
 
 <div class="subsection" id="purposes-objectives" style="display: none;">
