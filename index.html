@@ -137,26 +137,23 @@
         }
     </style>
     <script>
-        function showSection(sectionId) {
-            var sections = document.getElementsByClassName("section");
-            for (var i = 0; i < sections.length; i++) {
-                sections[i].style.display = "none";
-            }
-            document.getElementById(sectionId).style.display = "block";
-        }
         function showSubSection(subSectionId) {
-    var subSection = document.getElementById(subSectionId);
-    if (subSection) {
-        subSection.style.display = 'block';
+        var subSection = document.getElementById(subSectionId);
+        if (subSection) {
+            if (subSection.style.display === 'block') {
+                subSection.style.display = 'none';
+            } else {
+                subSection.style.display = 'block';
+            }
+        }
     }
-}
 
-function hideSubSection(subSectionId) {
-    var subSection = document.getElementById(subSectionId);
-    if (subSection) {
-        subSection.style.display = 'none';
+    function hideSubSection(subSectionId) {
+        var subSection = document.getElementById(subSectionId);
+        if (subSection) {
+            subSection.style.display = 'none';
+        }
     }
-}
     </script>
 </head>
 <body>
@@ -204,8 +201,7 @@ function hideSubSection(subSectionId) {
                     <ul>
                         <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('introduction')">Introduction</a></summary>
-                 <a class="reference internal" href="javascript:void(0);" onclick="hideSubSection('introduction')">Introduction</a>
+       <a class="reference internal" href="javascript:void(0);" onclick="showSubSection('introduction')"> Toggle Introduction</a>
     </details>
 </li>
 <li>
