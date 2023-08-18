@@ -137,26 +137,62 @@
         }
     </style>
     <script>
-        function showSection(sectionId) {
-            var sections = document.getElementsByClassName("section");
-            for (var i = 0; i < sections.length; i++) {
-                sections[i].style.display = "none";
-            }
-            document.getElementById(sectionId).style.display = "block";
-        }
-        function showSubSection(subSectionId) {
-    var subSection = document.getElementById(subSectionId);
+        // Function to show a specific section by its ID
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+        targetSection.style.display = 'block';
+    }
+}
+       
+    
+// Function to show a specific subsection by its ID
+function showSubSection(subSectionId) {
+    const subSection = document.getElementById(subSectionId);
     if (subSection) {
         subSection.style.display = 'block';
     }
 }
 
+// Function to hide a specific subsection by its ID
 function hideSubSection(subSectionId) {
-    var subSection = document.getElementById(subSectionId);
+    const subSection = document.getElementById(subSectionId);
     if (subSection) {
         subSection.style.display = 'none';
     }
 }
+
+// Function to perform a search (you need to implement searchContent() function)
+function searchContent() {
+    const searchInput = document.getElementById('search-input');
+    const searchText = searchInput.value.toLowerCase();
+
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        const sectionContent = section.textContent.toLowerCase();
+        if (sectionContent.includes(searchText)) {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+}
+
+// Attach event listeners to navigation links
+document.addEventListener('DOMContentLoaded', function() {
+    const navigationLinks = document.querySelectorAll('.navigation a');
+    navigationLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const sectionId = this.getAttribute('data-section');
+            showSection(sectionId);
+        });
+    });
+});
     </script>
 </head>
 <body>
@@ -169,10 +205,7 @@ function hideSubSection(subSectionId) {
            
             
         </div>
-        <div class="wy-form">
-            <input type="text" placeholder="Search..." id="search-input">
-            <button onclick="searchContent()">Search</button>
-        </div>
+        
 
     </div>
 
@@ -204,58 +237,58 @@ function hideSubSection(subSectionId) {
                     <ul>
                         <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('introduction')">Introduction</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" data-section= "introduction">Introduction</a></summary>
     </details>
 </li>
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('purposes-objectives')">Purposes and Objectives</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" data-section= "purposes-objectives">Purposes and Objectives</a></summary>
     </details>
 </li>
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('scope-coverage')">Scope and Coverage</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" data-section= "scope-coverage">Scope and Coverage</a></summary>
     </details>
 </li> 
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('benefits')">benefits</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" data-section= "benefits">benefits</a></summary>
     </details>
 </li> 
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('examples')">Examples</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" data-section= "examples">Examples</a></summary>
     </details>
 </li>
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('acknowledgment')">Acknowledgment</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" data-section= "acknowledgment">Acknowledgment</a></summary>
     </details>
 </li>       
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('distribution')">Distribution</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" data-section= "distribution">Distribution</a></summary>
     </details>
 </li>       
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('updates')">Updates</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" data-section= "updates">Updates</a></summary>
     </details>
 </li>       
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('contact-info')">Contact Information</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" data-section= "contact-info">Contact Information</a></summary>
     </details>
 </li>       
       </ul>
 
-                    <div class="subsection" id="introduction" style="display: none;">
+                    <div class="data-section" id="introduction" style="display: none;">
     <h3>Introduction</h3>
     <p>Market research is an organized effort to gather information about target markets and customers.</p>
     <p>A market research guide is a comprehensive and structured resource that provides individuals, businesses, and researchers with detailed instructions, methodologies, and insights to effectively conduct market research.</p>
 </div>
 
-<div class="subsection" id="purposes-objectives" style="display: none;">
+<div class="data-section" id="purposes-objectives" style="display: none;">
     <h3>Purposes and Objectives</h3>
     <p> A market research guide serves as a valuable resource that offers step-by-step instructions, methodologies, best practices, and insights to guide users through the process of gathering, analyzing, and interpreting data about a specific market, industry, or target audience</p>
     <p>The main objectives of a market research guide includes -</p>
@@ -263,7 +296,7 @@ function hideSubSection(subSectionId) {
     <img src="Purposeandobject.jpg" alt="Image Description" style="max-width: 100%; height: auto;">
 </div>
 
-<div class="subsection" id="scope-coverage" style="display: none;">
+<div class="data-section" id="scope-coverage" style="display: none;">
     <h3>Scope and Coverage</h3>
     <p>Market research is an industry that overlaps with and is often referred to as the "insights” industry.</p>
     <ul> <li><a Framing managerial anomalies: an anomaly is a puzzle or a perplexing situation that the market research report is meant to solve. a></li>
@@ -272,11 +305,11 @@ function hideSubSection(subSectionId) {
             </ul>
 </div>
 
-<div class="subsection" id="benefits" style="display: none;">
+<div class="data-section" id="benefits" style="display: none;">
     <h3>Benefits</h3>
     <img src="Picture2.jpg" alt="benfit daigram" style="max-width: 100%; height: auto;">
 </div>
-<div class="subsection" id="examples" style="display: none;">
+<div class="data-section" id="examples" style="display: none;">
     <h3>Examples</h3>
     <img src="Picture2.jpg" alt="benfit daigram" style="max-width: 100%; height: auto;">
 </div>
