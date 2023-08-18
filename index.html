@@ -137,62 +137,26 @@
         }
     </style>
     <script>
-        // Function to show a specific section by its ID
-function showSection(sectionId) {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
-    
-    const targetSection = document.getElementById(sectionId);
-    if (targetSection) {
-        targetSection.style.display = 'block';
-    }
-}
-       
-    
-// Function to show a specific subsection by its ID
-function showSubSection(subSectionId) {
-    const subSection = document.getElementById(subSectionId);
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName("section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(sectionId).style.display = "block";
+        }
+        function showSubSection(subSectionId) {
+    var subSection = document.getElementById(subSectionId);
     if (subSection) {
         subSection.style.display = 'block';
     }
 }
 
-// Function to hide a specific subsection by its ID
 function hideSubSection(subSectionId) {
-    const subSection = document.getElementById(subSectionId);
+    var subSection = document.getElementById(subSectionId);
     if (subSection) {
         subSection.style.display = 'none';
     }
 }
-
-// Function to perform a search (you need to implement searchContent() function)
-function searchContent() {
-    const searchInput = document.getElementById('search-input');
-    const searchText = searchInput.value.toLowerCase();
-
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        const sectionContent = section.textContent.toLowerCase();
-        if (sectionContent.includes(searchText)) {
-            section.style.display = 'block';
-        } else {
-            section.style.display = 'none';
-        }
-    });
-}
-
-// Attach event listeners to navigation links
-document.addEventListener('DOMContentLoaded', function() {
-    const navigationLinks = document.querySelectorAll('.navigation a');
-    navigationLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            const sectionId = this.getAttribute('data-section');
-            showSection(sectionId);
-        });
-    });
-});
     </script>
 </head>
 <body>
@@ -205,7 +169,10 @@ document.addEventListener('DOMContentLoaded', function() {
            
             
         </div>
-        
+        <div class="wy-form">
+            <input type="text" placeholder="Search..." id="search-input">
+            <button onclick="searchContent()">Search</button>
+        </div>
 
     </div>
 
@@ -237,47 +204,47 @@ document.addEventListener('DOMContentLoaded', function() {
                     <ul>
                         <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" data-section= "introduction">Introduction</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('introduction')">Introduction</a></summary>
     </details>
 </li>
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" data-section= "purposes-objectives">Purposes and Objectives</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('purposes-objectives')">Purposes and Objectives</a></summary>
     </details>
 </li>
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" data-section= "scope-coverage">Scope and Coverage</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('scope-coverage')">Scope and Coverage</a></summary>
     </details>
 </li> 
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" data-section= "benefits">benefits</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('benefits')">benefits</a></summary>
     </details>
 </li> 
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" data-section= "examples">Examples</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('examples')">Examples</a></summary>
     </details>
 </li>
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" data-section= "acknowledgment">Acknowledgment</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('acknowledgment')">Acknowledgment</a></summary>
     </details>
 </li>       
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" data-section= "distribution">Distribution</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('distribution')">Distribution</a></summary>
     </details>
 </li>       
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" data-section= "updates">Updates</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('updates')">Updates</a></summary>
     </details>
 </li>       
 <li>
     <details>
-        <summary><a class="reference internal" href="javascript:void(0);" data-section= "contact-info">Contact Information</a></summary>
+        <summary><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('contact-info')">Contact Information</a></summary>
     </details>
 </li>       
       </ul>
