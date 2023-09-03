@@ -1,176 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< Updated upstream
     <title>Market Research Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        /* Basic CSS styling for the two-column layout */
-        body {
-            font-family: "Open Sans", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .header {
-            background-color: #010b49;
-            color: #fff;
-            font-size: 14px;
-            padding: 20px;
-            width: 20%;
-            
-            
-        }
-        .project-name {
-            flex: 2;
-            background-color: #010b49;
-            padding: 10px 20px;
-            color: #fff;
-            font-size: 15px;
-            margin-top: px;
-            text-align: left;
-            margin-bottom: px;
-            display: flex;
-            align-items: center;  /* left the content horizontally */
-        }
-        .project-name h1 {
-            margin: 0;
-            font-size: 32px;
-            margin-right: 10px;
-        }
-
-        .project-name p {
-            font-size: 16px;
-            margin: 0   ;
-            opacity: 0.8;
-        }
-        .icon-home {
-            margin-right: 10px; /* Add some space between the icon and text */
-        }
-        .wy-form {
-            flex: 1;
-            margin-left: 20px;
-        }
-
-        .wy-form input[type="text"] {
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 100%;
-        }
-
-        .container {
-            display: flex;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: auto; /* Prevent child elements from overflowing */
-        
-        }
-
-        .navigation {
-            flex: .5;
-            padding: 30px;
-            background-color: #2b2a2d;
-            color: #fff;
-        }
-
-        .navigation h2 {
-            font-size: 20px;
-            margin-bottom: px;
-            padding-bottom: 10px;
-            border-bottom: px solid #fff;
-        }
-
-        .navigation ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .navigation li {
-            margin-bottom: 10px;
-        }
-
-        .navigation a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .navigation a:hover {
-            color: #230749;
-        }
-
-        .explanation {
-            flex: 2;
-            padding: 20px;
-        }
-        @media screen and (max-width: 600px) {
-      .container {
-        padding: 10px;
-      }
-    }
-
-        .project-name {
-            background-color: #010b49;
-            padding: 30px;
-            color: #fff;
-            font-size: 20px;
-            margin-bottom: px;
-        }
-        .image-container {
-            flex: 1;
-            max-width: 80%;
-            margin-left: 20px;
-        }
-
-        .image-container img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Show the "Overview" section by default */
-        .section {
-            display: none;
-        }
-
-        .section#overview {
-            display: block;
-        }
-    </style>
-    <script>
-        function showSection(sectionId) {
-            var sections = document.getElementsByClassName("section");
-            for (var i = 0; i < sections.length; i++) {
-                sections[i].style.display = "none";
-            }
-            document.getElementById(sectionId).style.display = "block";
-        }
-        function showSubSection(subSectionId) {
-        var subSection = document.getElementById(subSectionId);
-        if (subSection) {
-            if (subSection.style.display === 'block') {
-                subSection.style.display = 'none';
-            } else {
-                subSection.style.display = 'block';
-            }
-        }
-    }
-    
-
-    function hideSubSection(subSectionId) {
-        var subSection = document.getElementById(subSectionId);
-        if (subSection) {
-            subSection.style.display = 'none';
-        }
-    }
-    </script>
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>A Kubernetes Story: <strong>Benny Goes to the Zoo</strong></title>
-    
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -186,12 +18,11 @@
         .container {
             background-color: #fff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
-            margin: 0 20px;
-            text-align: left;
         }
+        @media screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
 
         h1 {
             color: #333;
@@ -212,11 +43,18 @@
         }
     
     </style>
->>>>>>> Stashed changes
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName("section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(sectionId).style.display = "block";
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-<<<<<<< Updated upstream
         <div class="navigation">
             <h2>Home</h2>
             <ul>
@@ -232,267 +70,64 @@
                 <li><a href="javascript:void(0);" onclick="showSection('feedback')">Feedback</a></li>
             </ul>
         </div>
-        
-        
 
         <div class="explanation">
+<<<<<<< HEAD
+        <div class="section" id="overview">
+            <h1>Welcome to the Market Research Guide</h1>
+            <h2>Overview</h2>
+            <p>In the dynamic landscape of today's business world, informed decisions are paramount to success. Market Research stands as a guiding light, illuminating the path forward by offering deep insights into industries, base customers, and competitors. Welcome to our comprehensive Market Research Guide, designed to equip you with the tools and knowledge through every step of the journey, from laying the foundation of research objectives to intricate data patterns and translating them into actionable strategies.</p>
+
+            <ul>
+                                <li ><a class="reference internal" href="javascript:void(0);" onclick="toggleSubSection('introduction')">Introduction</a></li>
+=======
             <div class="section" id="overview">
                 <p><h1>Welcome to the Market Research Guide</h1>
                 <h2>Overview</h2>
-    <p>In the fast-changing world of business today, it's really important to make smart decisions to succeed. Market research acts like a helpful guide, showing us the right path by giving us deep insights about industries, target customers, and competitors. Our complete Market Research Guide is here to help you at every step, from figuring out what you want to learn to understanding tricky data trends, and using them to make smart plans.</p>
+    <p>In the dynamic landscape of today's business world, informed decisions are paramount to success. Market Research stands as a guiding light, illuminating the path forward by offering deep insights into industries, base customers, and competitors. Welcome to our comprehensive Market Research Guide, designed to equip you with the tools and knowledge through every step of the journey, from laying the foundation of research objectives to intricate data patterns and translating them into actionable strategies.</p>
                     
                     <ul>
-                        <li>
-    
-       <a class="reference internal" href="javascript:void(0);" onclick="showSubSection('introduction')"> Introduction</a>
-    
-</li>
-<li>
-    <a class="reference internal" href="javascript:void(0);" onclick="showSubSection('purposes-objectives')">Purposes and Objectives</a>
-</li>
-<li>
-    <a class="reference internal" href="javascript:void(0);" onclick="showSubSection('scope-coverage')">Scope and Coverage</a>
-</li> 
-<li>
-   <a class="reference internal" href="javascript:void(0);" onclick="showSubSection('benefits')">benefits</a>
-</li> 
-<li>
-    <a class="reference internal" href="javascript:void(0);" onclick="showSubSection('examples')">Examples</a>
-</li>
-<li>
-  <a class="reference internal" href="javascript:void(0);" onclick="showSubSection('acknowledgment')">Acknowledgment</a>
-</li>       
-<li>
-    <a class="reference internal" href="javascript:void(0);" onclick="showSubSection('distribution')">Distribution</a>
-</li>       
-<li>
-    <a class="reference internal" href="javascript:void(0);" onclick="showSubSection('updates')">Updates</a>
-</li>       
-<li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('contact-info')">Contact Information</a></li>       
-      </ul>
+                                <li><a class="reference internal1" href="javascript:void(0);" onclick="showSubSection('introduction')">Introduction</a></li>
+>>>>>>> a29a2a6434374e103d2f0ad551d7c6d9fe9b82d9
+                                <li ><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('purposes-objectives')">Purposes and Objectives</a></li>
+                                <li ><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('scope-coverage')">Scope and Coverage</a></li>
+                                <li ><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('benefits')">Benefits</a></li>
+                                <li ><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('examples')">Examples</a></li>
+                                <li ><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('acknowledgment')">Acknowledgment</a></li>
+                                <li ><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('distribution')">Distribution</a></li>
+                                <li ><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('updates')">Updates</a></li>
+                                <li ><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('contact-info')">Contact Information</a></li>
+                            
+                    </ul>
 
-                    <div class="subsection" id="introduction" style="display: none;">
-    <h3>Introduction</h3>
-    <p>Market research is an organized effort to gather information about target markets and customers.</p>
-    <p>A market research guide is a comprehensive and structured resource that provides individuals, businesses, and researchers with detailed instructions, methodologies, and insights to effectively conduct market research.</p>
-</div>
-
-<div class="subsection" id="purposes-objectives" style="display: none;">
-    <h3>Purposes and Objectives</h3>
-    <p> A  the market research guide serves as a valuable resource that offers step-by-step instructions, methodologies, best practices, and insights to guide users through the process of gathering, analyzing, and interpreting data about a specific market, industry, or target audience</p>
-    <p>The main objectives of a market research guide includes -</p>
-
-    <img src="Purposeandobject.jpg" alt="Image Description" style="max-width: 100%; height: auto;">
-</div>
-
-<div class="subsection" id="scope-coverage" style="display: none;">
-    <h3 class="subsection-title">Scope and Coverage</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">Market research is an industry that overlaps with and is often referred to as the "insights" industry.</p>
-        <p class="subsection-description">Key principles that shape the scope and coverage of market research include:</p>
-        <ol class="subsection-list">
-            <li class="subsection-item">Framing Managerial Anomalies: An anomaly is a puzzle or perplexing situation that market research reports aim to solve.</li>
-            <li class="subsection-item">Loading Instruments with Meanings: Observations of commonplace social practices are translated into the marketing ontology.</li>
-            <li class="subsection-item">Signposting Prescriptions: Intended readings are guided to reduce interpretive flexibility.</li>
-        </ol>
-    </div>
-</div>
-
-<div class="subsection" id="benefits" style="display: none;">
-    <h3>Benefits</h3>
-    <img src="Picture2.jpg" alt="benfit daigram" style="max-width: 100%; height: auto;">
-</div>
-<div class="subsection" id="examples" style="display: none;">
-    <h3>Examples</h3>
-    <img src="Picture2.jpg" alt="benfit daigram" style="max-width: 100%; height: auto;">
-</div>
-
-<div class="subsection" id="acknowledgment" style="display: none;">
-    <h3 class="subsection-title">Acknowledgment</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">We extend our heartfelt gratitude to the individuals and organizations whose support, expertise, and contributions made the creation of this market research guide possible. Their dedication and insights have greatly enriched the content and value of this resource.</p>
-        
-        <p class="subsection-description">We would like to thank:</p>
-        
-        <ul class="subsection-list">
-            <li class="subsection-item">Praxis Summer Camp Organization: For their time, candid responses, and willingness to share their perspectives, which added depth to our understanding and for giving us an opportunity to be a part of this project.</li>
-            <li class="subsection-item">Simran Wadhwa, Milin Zhang, and Rajendra Didel: The driving force behind this guide's creation, who have poured their expertise, passion, and countless hours into crafting a comprehensive and insightful resource.</li>
-            <li class="subsection-item">Martin Holi: For their invaluable guidance and expert insights throughout the development of this guide.</li>
-            <li class="subsection-item">Emmanuel Opoku: For their diligent research efforts, meticulous review, and valuable feedback that greatly enhanced the accuracy and clarity of this guide.</li>
-            <li class="subsection-item">TOPAS: For generously providing access to relevant data and resources, enriching the quality of our research.</li>
-        </ul>
-        
-        <p class="subsection-description">This guide stands as a collective effort, and we are deeply appreciative of everyone who played a role, no matter how big or small.</p>
-    </div>
-</div>
-
-<div class="subsection" id="distribution" style="display: none;">
-    <h3 class="subsection-title">Distribution</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">A market research guide serves as a valuable resource that offers step-by-step instructions, methodologies, best practices, and insights to guide users through the process of gathering, analyzing, and interpreting data about a specific market, industry, or target audience.</p>
-        <p class="subsection-description">The main objectives of a market research guide include:</p>
-        <ul class="subsection-list">
-            <li class="subsection-item">Providing detailed instructions and methodologies for effective research.</li>
-            <li class="subsection-item">Offering best practices for gathering and analyzing data.</li>
-            <li class="subsection-item">Guiding users through the interpretation of data.</li>
-        </ul>
-        <p>The guide is easily accessible at <a href="https://pscmarketresearch17.github.io/marketresearch17.github.io/">https://pscmarketresearch17.github.io/marketresearch17.github.io/</a></p>
-
-<p>We have created a dedicated feedback form where you can provide detailed feedback on specific sections of the guide, offer suggestions for improvement, and share your overall experience.</p>
-<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrSBi2DY38fT0dTtVYejOToE_z9iti9PASNXLZDeuef0_WkQ/viewform?usp=sf_link">Feedback Form</a></p>
-
-    </div>
-</div>
-
-<div class="subsection" id="updates" style="display: none;">
-    <h3 class="subsection-title">Updates</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">We understand that the effectiveness of the guide relies on its accuracy and relevance. Our commitment to continuous improvement means that we will regularly review and update the content to reflect the latest insights, methodologies, and best practices in the field of market research.</p>
-        <p class="subsection-description">Thank you for your interest in the market research guide, and we look forward to keeping you informed about its ongoing evolution.</p>
-    </div>
-</div>
-
-
-<div class="subsection" id="contact-info" style="display: none;">
-    <h3 class="subsection-title">Contact Information</h3>
-        <div class="subsection-content">
-            <p class="subsection-description">If you have any questions, feedback, or inquiries related to the market research guide, please don't hesitate to reach out to us.</p>
-            <p class="subsection-description">Email : <a href="mailto:pscmarketresearch17@gmail.com">pscmarketresearch17@gmail.com</a></p>
-            <p class="subsection-description">We appreciate your engagement and are committed to providing you with the support you need to make the most of this market research guide.</p>
-        </div>
-    </div>
-
-
-
+                 
             </div>
-        
-        
 
             <div class="section" id="methodologies">
                 <h2>Methodologies</h2>
                 <p>Describe the methodologies used in your market research.</p>
                 <ul>
-                    <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('survey')"> Survey</a></li>
+                    <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('survey')">Survey</a></li>
                     <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('interview')">Interview</a></li>
                     <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('secondary-research')">Secondary Research</a></li>
                     <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('content-analysis')">Content Analysis</a></li>                           
                 </ul>
-                <div class="subsection" id="survey" style="display: none;">
-    <h3>Survey</h3>
-    <p>The survey method is a research technique used to collect data from a group of individuals by asking them a series of structured questions. Surveys are typically administered through various mediums, such as paper questionnaires, online forms, telephone interviews, or face-to-face interactions</p>
-</div>
-
             </div>
 
     <div class="section" id="internal-analysis">
         <h2>Internal Analysis</h2>
-        <div class="subsection-content">
-            <p class="subsection-description">Before going into market research and analyzing your buyers and competitors, you first need to understand your own organization: its structure, potential, advantages, and innovations. This section helps you go through the key aspects of internal analysis on your own company, along with method recommendations and further resources.</p>
-        </div>
+        <p>Discuss the internal factors affecting the subject of your market research.</p>
 
         <ul>
             <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('organization structure')">Organization structure</a></li>
             <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('company objective')">Company objective</a></li>
             <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('core competencies')">Core competencies</a></li>
-            <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('customer base')">Customer base</a></li> 
+            <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('customer base')">Customer case</a></li> 
             <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('marketing & branding')">Marketing & Branding</a></li>  
             <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('research & development')">Research & Development</a></li>  
             <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('customer relationship management')">Customer relationship management</a></li>  
             <li><a class="reference internal" href="javascript:void(0);" onclick="showSubSection('technology infrastructure')">Technology infrastructure</a></li>                            
         </ul>
-        <div class="subsection" id="organization structure" style="display: none;">
-    <h3>Organization structure</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">Organizational structure outlines how tasks are divided, coordinated, and controlled to achieve the company's goals and objectives efficiently. It defines:</p>
-        <ul class="subsection-list">
-            <li>Reporting lines</li>
-            <li>Decision-making processes</li>
-            <li>Communication channels</li>
-            <li>The overall framework for how work is managed and executed</li>
-        </ul>
-    </div>
-</div>
-<div class="subsection" id="company objective" style="display: none;">
-    <h3>Company objective</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">Company objectives are specific, measurable, and time-bound goals that an organization sets to guide its actions and measure its success. Company objectives can encompass various aspects of the business, including:</p>
-        <ul class="subsection-list">
-            <li>Financial performance</li>
-            <li>Market share</li>
-            <li>Customer satisfaction</li>
-            <li>Innovation</li>
-            <li>Employee development</li>
-            <li>Sustainability goals</li>
-        </ul>
-    </div>
-</div>
-<div class="subsection" id="core competencies" style="display: none;">
-    <h3>Core competencies</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">
-            <strong>Definition:</strong> Core competencies are a company’s unique strengths, capabilities, and resources that set it apart from competitors and enable it to create value and achieve a competitive advantage in the marketplace.
-        </p>
-        <p class="subsection-description">
-            <strong>Importance:</strong> These competencies are central to the company's ability to deliver its products or services effectively, meet customer needs, and drive sustainable growth.
-        </p>
-        <p class="subsection-description">
-            <strong>Function:</strong> Core competencies serve as the foundation for a company's strategic direction and often define its identity and value proposition.
-        </p>
-    </div>
-</div>
-<div class="subsection" id="customer base" style="display: none;">
-    <h3>Customer base</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">
-            A company's customer base refers to the group of individuals, organizations, or entities that regularly purchase or use the company's products or services. It is the core audience that the company targets and serves. The customer base is a critical aspect of a company's business strategy and a key influence on the company's revenue, market share, and overall success.
-        </p>
-    </div>
-</div>
-<div class="subsection" id="marketing & branding" style="display: none;">
-    <h3>Marketing & Branding</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">
-            A company's marketing and brand strategy is a comprehensive plan that outlines how the company will promote its products or services, establish a strong brand identity, and achieve its business objectives in the market.
-        </p>
-    </div>
-</div>
-
-<div class="subsection" id="research & development" style="display: none;">
-    <h3>Research & Development</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">
-            A company's Research & Development (R&D) strategy outlines its approach to innovation, technological advancement, the creation of new products, services, or processes, improving existing offerings, exploring new opportunities, and staying ahead of competitors in a rapidly evolving market.
-        </p>
-    </div>
-</div>
-
-<div class="subsection" id="customer relationship management" style="display: none;">
-    <h3>Customer relationship management</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">
-            <strong>Definition:</strong> CRM strategy outlines how the organization plans to build, manage, and enhance its relationships with customers throughout their lifecycle.
-        </p>
-        <p class="subsection-description">
-            <strong>The Goal:</strong> CRM strategy aims to create positive interactions, deliver exceptional customer experiences, and foster long-term loyalty.
-        </p>
-        <p class="subsection-description">
-            <strong>The Content:</strong> CRM strategy involves various practices, technologies, and processes that enable the company to understand, engage, and serve its customers effectively.
-        </p>
-    </div>
-</div>
-<div class="subsection" id="technology infrastructure" style="display: none;">
-    <h3>Technology infrastructure</h3>
-    <div class="subsection-content">
-        <p class="subsection-description">
-            <strong>Definition:</strong> A company's technology infrastructure refers to the underlying foundation of hardware, software, networks, and other technological components that enable the organization's IT operations, systems, and digital capabilities.
-        </p>
-        <p class="subsection-description">
-            <strong>Goal:</strong> It should provide the necessary framework for information flow, communication, data storage, processing, and access across various departments and functions within the company.
-        </p>
-    </div>
-</div>
-
-
     
     </div>
 
@@ -511,73 +146,10 @@
         </ul>
     </div>
 
-
     <div class="section" id="ethical-considerations">
-    <h2>Ethical Considerations</h2>
-    <div class="subsection-content">
-        <p class="subsection-description">
-            Ethical considerations are crucial in market research to ensure that the rights and well-being of participants, clients, researchers, and the broader society are respected and protected. Adhering to ethical principles enhances the credibility and reliability of research outcomes. Here are key ethical considerations to keep in mind when conducting market research:
-        </p>
-        <ul class="subsection-list">
-            <li><strong>Informed Consent</strong>: Participants should provide voluntary and informed consent to participate in the research. They should be fully aware of the purpose, procedures, risks, benefits, and any potential uses of their data.</li>
-            <li><strong>Privacy and Confidentiality</strong>:
-                <ul>
-                    <li>Protect participants' privacy by anonymizing and aggregating data whenever possible.</li>
-                    <li>Safeguard participants' confidential information, ensuring that it is stored securely and not shared with unauthorized parties.</li>
-                    <li>Clearly communicate how participant data will be used, who will have access to it, and how long it will be retained.</li>
-                </ul>
-            </li>
-            <li><strong>Data Collection and Use</strong>:
-                <ul>
-                    <li>Collect only the data necessary for the research and use it solely for the intended purpose. </li>
-                    <li>Be transparent about data collection methods, ensuring they are appropriate and respectful of participants' rights. </li>
-                    <li>Minimize any potential harm to participants through data collection or analysis.</li>
-                </ul>
-                <li><strong>Avoid Deception</strong>:
-                <ul>
-                    <li>Do not deceive or mislead participants about the purpose or nature of the research.</li>
-                    <li> If deception is necessary for the study, thoroughly debrief participants afterward, explaining the true nature of the research and addressing any concerns.</li>
-                </ul>
-                <li><strong>Conflicts of Interest</strong>:
-                <ul>
-                    <li>Disclose any potential conflicts of interest that could influence the research process or outcomes.</li>
-                    <li>Maintain objectivity and avoid bias in the design, execution, and reporting of the research.</li>
-                </ul>
-                <li><strong>Respect for Diversity and Inclusion</strong>:
-                <ul>
-                    <li>Ensure that research samples are representative and diverse, reflecting the target population.</li>
-                    <li>Treat all participants with respect, regardless of their demographic characteristics or opinions.</li>
-                </ul>
-                <li><strong>Honesty and Transparency</strong>:
-                <ul>
-                    <li>Provide accurate and truthful information about the research objectives, methods, and potential implications.</li>
-                    <li>Clearly communicate the limitations of the research and any uncertainties in the findings.</li>
-                </ul>
-                <li><strong>Minimize Harm</strong>:
-                <ul>
-                    <li>Take measures to prevent physical, emotional, or psychological harm to participants, researchers, or any stakeholders.</li>
-                    <li>Consider the potential impact of the research on vulnerable or sensitive populations.</li>
-                </ul>
-                <li><strong>Responsible Reporting</strong>:
-                <ul>
-                    <li>Present research findings accurately, avoiding selective or biased reporting.</li>
-                    <li>Clearly distinguish between opinion, interpretation, and factual data.</li>
-                </ul>
-                <li><strong>Compliance with Laws and Regulations</strong>:
-                <ul>
-                    <li>Adhere to relevant laws, regulations, and industry standards related to data protection, privacy, and research ethics.</li>
-                    <li>Obtain necessary approvals from institutional review boards (IRBs) or ethics committees if required.</li>   
-                </ul>
-                <li><strong>Accountability</strong>:
-                <ul>
-                    <li>Take responsibility for the ethical conduct of the research and address any ethical concerns that arise during the process.</li>
-                    <li>Be open to feedback and address any ethical concerns raised by participants, colleagues, or stakeholders.</li>
-                <p>By considering and addressing these ethical considerations, market researchers can ensure that their work is conducted in a responsible, respectful, and morally sound manner.</p>
-                    </ul>
-
-        </ul>
+        <h2>Ethical Considerations</h2>
+        <p>Data security, confidentiality, benefits and risks, informed consent, feedback and transparency</p>
     </div>
-</div>
 
     <div class="section" id="findings">
         <h2>Present Your Findings</h2>
@@ -586,90 +158,10 @@
     </div>
 
     <div class="section" id="recommendations">
-    <h2>Recommendations</h2>
-    <p>The outcome of our survey:</p>
-    <div class="subsection-content">
-        <p class="subsection-description">
-            These recommended data sources are collected through survey, interview, and secondary data collection.
-        </p>
-        <ul class="subsection-list">
-            <li><strong>Newspaper:</strong></li>
-            <li><strong>Books:</strong></li>
-            <li><strong>Websites:</strong></li>
-            <li><strong>Databases:</strong></li>
-            <li><strong>Learning resources:</strong></li>
-        </ul>
-        <p class="subsection-description">
-            <strong>LinkedIn Learning @ Market Research Foundation:</strong>
-            <a href="https://www.linkedin.com/learning/market-research-foundations/the-power-of-market-research?resume=false&u=38239804">
-                https://www.linkedin.com/learning/market-research-foundations/the-power-of-market-research?resume=false&u=38239804
-            </a>
-        </p>
-        <p class="subsection-description">
-            <strong>From our survey:</strong></p>
-            <p>Learn more about focus group method:</p>
-            <strong>LinkedIn Learning: Market Research Foundations - Focus Group:</strong>
-            <a href="https://www.linkedin.com/learning/market-research-foundations/focus-groups?resume=false&u=38239804">
-                https://www.linkedin.com/learning/market-research-foundations/focus-groups?resume=false&u=38239804
-            </a>
-            <p><strong>"The Moderator's Survival Guide: Handling Common, Tricky, and Sticky Situations in User Research" by Donna Tedesco and Fiona Tranquada. Source:</strong>
-                <a href="https://www.amazon.de/-/en/Donna-Tedesco/dp/0124047009">
-                    https://www.amazon.de/-/en/Donna-Tedesco/dp/0124047009
-                </a>
-            </p>
-            <p><strong>GreenBook Blog: Offers a range of articles, webinars, and resources on market research methods, including focus groups. Website:</strong>
-                <a href="https://www.greenbook.org/mr/focus-groups/">
-                    https://www.greenbook.org/mr/focus-groups/
-                </a>
-            </p>
-            <p><strong>Learn about interview method:</strong></p>
-            <ul class="subsection-list">
-                <li>
-                    LinkedIn Learning: Market Research Foundations - User Interview:
-                    <a href="https://www.linkedin.com/learning/market-research-foundations/user-interviews?resume=false&u=38239804">
-                        https://www.linkedin.com/learning/market-research-foundations/user-interviews?resume=false&u=38239804
-                    </a>
-                </li>
-                <li>
-                    LinkedIn Learning: Market Research Foundations - Image-based Interview:
-                    <a href="https://www.linkedin.com/learning/market-research-foundations/image-based-interviews?resume=false&u=38239804">
-                        https://www.linkedin.com/learning/market-research-foundations/image-based-interviews?resume=false&u=38239804
-                    </a>
-                </li>
-                <li>
-                    SAGE Research Methods: Offers articles, videos, and other resources on research methods, including qualitative interviews. Website:
-                    <a href="https://methods.sagepub.com/">https://methods.sagepub.com/</a>
-                </li>
-                <li>
-                    Research Methods Knowledge Base: Provides a comprehensive overview of various research methods, including qualitative interviews. Website:
-                    <a href="https://conjointly.com/kb/">https://conjointly.com/kb/</a>
-                </li>
-            </ul>
-            <p><strong>Learn about survey method:</strong></p>
-            <ul class="subsection-list">
-                <li>
-                    LinkedIn Learning: Market Research Foundations - User Interview:
-                    <a href="https://www.linkedin.com/learning/market-research-foundations/surveys-2?resume=false&u=38239804">
-                        https://www.linkedin.com/learning/market-research-foundations/surveys-2?resume=false&u=38239804
-                    </a>
-                </li>
-                <li>
-                    Survey Monkey:
-                    <a href="https://www.surveymonkey.com/">https://www.surveymonkey.com/</a>
-                </li>
-                <li>
-                    Qualtrics:
-                    <a href="https://www.qualtrics.com/uk/?rid=ip&prevsite=en&newsite=uk&geo=DE&geomatch=uk">https://www.qualtrics.com/uk/</a>
-                </li>
-                <li>
-                    Handbook of Marketing Scales: Learn to design your scale questions with marketing scales, Source:
-                    <a href="<Enter Source URL Here>"><Enter Source Title Here></a>
-                </li>
-            </ul>
-        </p>
+        <h2>Recommendations</h2>
+        <p>The outcome of our survey</p>
+        
     </div>
-</div>
-
 
     <div class="section" id="conclusion">
         <h2>Conclusion</h2>
@@ -686,62 +178,5 @@
     </div>
 </div>
 </div>
-=======
-        <h1><strong>A Kubernetes Story: Benny Goes to the Zoo</strong></h1>
-        <img src="zoo.visit.jpg" alt="Benny at the Kubernetes Zoo" width="300" height="200">
-        <p>
-            Once upon a time in the world of technology, there lived a curious little creature named <strong>Benny</strong>. Benny wasn't like the other animals in the forest; Benny was a <strong>container</strong>. Benny lived in a tiny <strong>container</strong> village nestled between the towering trees of the <strong>Cloud Forest</strong>.
-        </p>
-        <p>
-            One sunny morning, <strong>Benny</strong> woke up with a sense of adventure. It had heard tales of a magical place called the <strong>Kubernetes Zoo</strong>. The <strong>Kubernetes Zoo</strong> was known far and wide as the most amazing place for <strong>containers</strong> to live and thrive. <strong>Benny</strong> decided it was time to pay the zoo a visit.
-        </p>
-        <p>
-            With its tiny <strong>container</strong> backpack packed with some microservices snacks and a flask of <strong>Docker</strong> water, <strong>Benny</strong> set off on its journey. The forest was buzzing with excitement as <strong>Benny</strong> made its way through the winding paths of the <strong>Cloud Forest</strong>.
-        </p>
-        <p>
-            Along the way, <strong>Benny</strong> met other <strong>container</strong> friends like <strong>Docker</strong> the Zara, who shared stories of their adventures in the vast sea of software. <strong>Benny</strong> learned about orchestrators like <strong>Kubernetes</strong>, who helped <strong>containers</strong> like them live harmoniously in the digital world.
-        </p>
-        <p>
-            As Benny ventured deeper into the forest, it noticed the environment changing. The trees grew taller, and the air was filled with the hum of servers. Benny had arrived at the edge of the Kubernetes Zoo.
-        </p>
-        <p>
-            At the entrance, there was a friendly Ingress Controller who checked Benny's credentials before allowing it inside. The Kubernetes Zoo was an awe-inspiring place with clusters of containers living in perfect harmony. Each cluster had its own microservices ecosystem, just like a mini-ecosystem within the digital jungle.
-        </p>
-        <p>
-            Benny marveled at the sights. Pods of colorful containers were dancing gracefully under the watchful eye of ReplicaSets. StatefulSets roamed the zoo, ensuring that data was safe and sound. Services acted as tour guides, directing network traffic to the right places.
-        </p>
-        <p>
-            The highlight of Benny's journey was the grand performance at the Deployment Arena. Here, Deployments were orchestrating rolling updates and rollbacks, much like a spectacular circus act. The audience of containers cheered as the updates happened seamlessly, without any service disruptions.
-        </p>
-        <p>
-            Benny spent hours exploring the various exhibits, from ConfigMaps Cave to the Secret Garden. It even visited the RBAC (Role-Based Access Control) Aviary, where permissions and security were well-guarded.
-        </p>
-        <p>
-            As the day turned to evening, Benny realized it was time to head back to its <strong>container</strong> village in the Cloud Forest. With a heart full of new knowledge and memories, Benny bid farewell to the Kubernetes Zoo, promising to return one day.
-        </p>
-        <p>
-            With newfound wisdom and the magic of Kubernetes in its heart, Benny journeyed back to its home in the <strong>container</strong> village. It shared its incredible adventure with its <strong>container</strong> friends, and they all agreed that the Kubernetes Zoo was truly a magical place where containers thrived in perfect harmony.
-        </p>
-        <p>
-            And so, Benny's adventure to the Kubernetes Zoo became a legendary tale in the world of technology, inspiring containers everywhere to dream big and explore the vast and exciting digital world. Containers from all corners of the cloud began to whisper about the wonders of the Kubernetes Zoo, where orchestration ruled and efficiency reigned supreme.
-        </p>
-        <p>
-            Word of Benny's journey reached the ears of Kube the Kubernetes mascot, who decided to pay a visit to the Cloud Forest. Kube brought gifts of Helm charts and Kustomize configurations to help Benny's <strong>container</strong> village thrive.
-        </p>
-        <p>
-            With Kube's guidance and Benny's tales of the Kubernetes Zoo, <strong>container</strong> communities across the cloud began to organize their own expeditions, setting off on adventures to learn the ways of Kubernetes. They discovered that by embracing <strong>container</strong> orchestration, they could scale to new heights and operate with unprecedented efficiency.
-        </p>
-        <p>
-            The Cloud Forest, once a quiet corner of the digital world, began to buzz with the energy of containers dreaming big and exploring the vast and exciting digital wilderness. As they learned the ways of Kubernetes, they found that working together was not just efficient but also magical.
-        </p>
-       
-
-        <div class="footer">
-            <p>And so, the legend of <strong>Benny</strong> and the <strong>Kubernetes Zoo</strong> continued to inspire <strong>containers</strong> everywhere to push the boundaries of what they could achieve. The digital world had never seen such innovation and cooperation among <strong>containers</strong>, all thanks to a little creature with a big sense of adventure.</p>
-        </div>
-    </div>
-       
-    </div>
->>>>>>> Stashed changes
 </body>
 </html>
