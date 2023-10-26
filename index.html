@@ -69,7 +69,7 @@
     <video autoplay loop muted>
         <source src="cvimages/Rajendravideo.mp4" type="video/mp4">
     </video>
-    <header>
+    <header style="display: none;"> 
         <nav>
             <ul>
                 <li><a href="javascript:void(0);" onclick="showHomeContent()">Home</a></li>
@@ -94,28 +94,39 @@
     </div>
     <script>
         function showHomeContent() {
-            var homeContent = document.getElementById("home-content");
-            var projectContent = document.getElementById("project-content");
-            var container = document.getElementById("container");
-            if (homeContent.style.display === "none") {
-                homeContent.style.display = "block";
-                projectContent.style.display = "none"; // Hide the project content
-            } else {
-                homeContent.style.display = "none";
-            }
-        }
+    var homeContent = document.getElementById("home-content");
+    var projectContent = document.getElementById("project-content");
+    var header = document.querySelector("header");
+    var container = document.getElementById("container");
     
-        function showProjectContent() {
-            var homeContent = document.getElementById("home-content");
-            var projectContent = document.getElementById("project-content");
-            var container = document.getElementById("container");
-            if (projectContent.style.display === "none") {
-                projectContent.style.display = "block";
-                homeContent.style.display = "none"; // Hide the home content
-            } else {
-                projectContent.style.display = "none";
-            }
-        }
+    header.style.display = "block"; // Display the header
+    container.style.display = "block"; // Display the container
+
+    if (homeContent.style.display === "none") {
+        homeContent.style.display = "block";
+        projectContent.style.display = "none"; // Hide the project content
+    } else {
+        homeContent.style.display = "none";
+    }
+}
+
+function showProjectContent() {
+    var homeContent = document.getElementById("home-content");
+    var projectContent = document.getElementById("project-content");
+    var header = document.querySelector("header");
+    var container = document.getElementById("container");
+    
+    header.style.display = "block"; // Display the header
+    container.style.display = "block"; // Display the container
+
+    if (projectContent.style.display === "none") {
+        projectContent.style.display = "block";
+        homeContent.style.display = "none"; // Hide the home content
+    } else {
+        projectContent.style.display = "none";
+    }
+}
+
         
     </script>
     
