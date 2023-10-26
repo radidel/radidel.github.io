@@ -9,8 +9,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('cvimages/homepage1.png') no-repeat center center fixed;
-            background-size: cover;
             color: #333;
         }
 
@@ -56,9 +54,21 @@
             font-size: 16px;
             line-height: 1.5;
         }
+        
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
+    <video autoplay loop muted>
+        <source src="cvimages/Rajendravideo.mp4" type="video/mp4">
+    </video>
     <header>
         <nav>
             <ul>
@@ -70,8 +80,8 @@
         </nav>
     </header>
     <div class="container">
-        <h1>Welcome to My Page</h1>
-        <p>My Name is Rajendra Didel, I am Data Engineer</p>
+        <h1>Your Name</h1>
+        <p>Job Title</p>
         <!-- Rest of your CV content -->
     </div>
 </body>
