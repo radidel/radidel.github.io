@@ -96,16 +96,22 @@
         function showHomeContent() {
             var homeContent = document.getElementById("home-content");
             var projectContent = document.getElementById("project-content");
-            homeContent.style.display = "block";
-            projectContent.style.display = "none";
+            if (homeContent.style.display === "none") {
+                homeContent.style.display = "block";
+            } else {
+                homeContent.style.display = "none";
+            }
         }
     </script>
     <script>
         function showProjectContent() {
             var homeContent = document.getElementById("home-content");
             var projectContent = document.getElementById("project-content");
-            homeContent.style.display = "none";
-            projectContent.style.display = "block";
+            if (homeContent.style.display === "none") {
+                homeContent.style.display = "block";
+            } else {
+                homeContent.style.display = "none";
+            }
         }
     </script>
 </body>
