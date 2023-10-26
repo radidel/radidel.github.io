@@ -79,7 +79,7 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
+    <div class="container" id="container">
         <div id="home-content" style="display: none;">
             <h1>Rajendra Didel</h1>
             <p>Data Engineer</p>
@@ -96,6 +96,8 @@
         function showHomeContent() {
             var homeContent = document.getElementById("home-content");
             var projectContent = document.getElementById("project-content");
+            var container = document.getElementById("container");
+                container.style.display = "block"; 
             if (homeContent.style.display === "none") {
                 homeContent.style.display = "block";
                 projectContent.style.display = "none"; // Hide the project content
@@ -107,6 +109,8 @@
         function showProjectContent() {
             var homeContent = document.getElementById("home-content");
             var projectContent = document.getElementById("project-content");
+            var container = document.getElementById("container");
+                container.style.display = "block";
             if (projectContent.style.display === "none") {
                 projectContent.style.display = "block";
                 homeContent.style.display = "none"; // Hide the home content
@@ -114,6 +118,7 @@
                 projectContent.style.display = "none";
             }
         }
+        
     </script>
     
 </body>
