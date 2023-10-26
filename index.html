@@ -98,21 +98,23 @@
             var projectContent = document.getElementById("project-content");
             if (homeContent.style.display === "none") {
                 homeContent.style.display = "block";
+                projectContent.style.display = "none"; // Hide the project content
             } else {
                 homeContent.style.display = "none";
             }
         }
-    </script>
-    <script>
+    
         function showProjectContent() {
             var homeContent = document.getElementById("home-content");
             var projectContent = document.getElementById("project-content");
-            if (homeContent.style.display === "none") {
-                homeContent.style.display = "block";
+            if (projectContent.style.display === "none") {
+                projectContent.style.display = "block";
+                homeContent.style.display = "none"; // Hide the home content
             } else {
-                homeContent.style.display = "none";
+                projectContent.style.display = "none";
             }
         }
     </script>
+    
 </body>
 </html>
