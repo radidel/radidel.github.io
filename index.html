@@ -28,6 +28,28 @@
             display: inline;
             margin: 0 10px;
         }
+        .project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin: 10px 0;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.project-list a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+}
+
+.project-list a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    font-weight: bold; /* Make the text bold on hover */
+    transform: scale(1.1); /* Enlarge the text on hover */
+}
+
 
         nav a {
             text-decoration: none;
@@ -89,7 +111,19 @@
 
         <div id="project-content" style="display: none;">
             <h1>Project Details</h1>
-            <p>Here you can provide details about your projects, including their names, descriptions, your role, and any significant outcomes or achievements. Make sure to highlight your contributions and the technologies or tools you used in each project.</p>
+            <p>Explore my projects:</p>
+            <ul class="project-list">
+                <li><a href="javascript:void(0);" onclick="showProjectDetails('project1')">Project 1</a></li>
+                <li><a href="javascript:void(0);" onclick="showProjectDetails('project2')">Project 2</a></li>
+                <li><a href="javascript:void(0);" onclick="showProjectDetails('project3')">Project 3</a></li>
+                <li><a href="javascript:void(0);" onclick="showProjectDetails('project4')">Project 4</a></li>
+            </ul>
+        </div>
+        
+        <div id="project-details" style="display: none;">
+            <!-- Project details will be displayed here -->
+        </div>
+        
         </div>
     </div>
     <script>
@@ -126,6 +160,58 @@ function showProjectContent() {
         projectContent.style.display = "none";
     }
 }
+function showProjectDetails(projectName) {
+    var projectDetails = document.getElementById("project-details");
+    var projectContent = document.getElementById("project-content");
+
+    // Define project details
+    var projects = {
+        project1: {
+            title: "Seed Prediction using Gradient Boosting Algorithm",
+            company: "NCML",
+            duration: "6 months (January 2022 - June 2022)",
+            description: "As a Data Scientist at NCML, I worked on developing a predictive model for seed prediction using a Gradient Boosting Algorithm. The aim of this project was to help farmers make informed decisions on seed selection based on rainfall data, NDVI, and temperature.",
+            responsibilities: [
+                "Collecting and cleaning large datasets of rainfall, NDVI, and temperature data.",
+                "Preprocessing the data to extract relevant features and normalize the data.",
+                "Developing a Gradient Boosting Algorithm model to predict seed grades based on the weather data.",
+                "Tuning the hyperparameters of the model for better performance and accuracy.",
+                "Evaluating the model's performance using various metrics such as confusion matrix, precision, recall, and F1 score."
+            ]
+        },
+        // Add details for other projects here
+    };
+
+    // Check if the project details are currently displayed
+    if (projectDetails.style.display === "block") {
+        // Hide the project details with a fade-out animation
+        projectDetails.style.opacity = 0;
+        setTimeout(function () {
+            projectDetails.style.display = "none";
+        }, 500); // Adjust the animation duration if needed
+    } else {
+        // Show the project details based on the project name
+        var project = projects[projectName];
+        if (project) {
+            projectDetails.innerHTML = `
+                <h2>${project.title}</h2>
+                <p><strong>Company:</strong> ${project.company}</p>
+                <p><strong>Duration:</strong> ${project.duration}</p>
+                <p>${project.description}</p>
+                <p><strong>My responsibilities for this project included:</strong></p>
+                <ul>
+                    ${project.responsibilities.map(item => `<li>${item}</li>`).join('')}
+                </ul>`;
+
+            // Show the project details with a fade-in animation
+            projectDetails.style.display = "block";
+            setTimeout(function () {
+                projectDetails.style.opacity = 1;
+            }, 100); // Adjust the animation duration if needed
+        }
+    }
+}
+
 
         
     </script>
