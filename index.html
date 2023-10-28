@@ -113,9 +113,9 @@
             <h1>Project Details</h1>
             <p>Explore my projects:</p>
             <ul class="project-list">
-                <li><a href="javascript:void(0);" onclick="showProjectDetails('project1')">Project 1</a></li>
-                <li><a href="javascript:void(0);" onclick="showProjectDetails('project2')">Project 2</a></li>
-                <li><a href="javascript:void(0);" onclick="showProjectDetails('project3')">Project 3</a></li>
+                <li><a href="javascript:void(0);" onclick="showProjectDetails('project1')"> Prediction using Gradient Boosting Algorithm</a></li>
+                <li><a href="javascript:void(0);" onclick="showProjectDetails('project2')">AzureFlow: The Automated Data Transfer Solution</a></li>
+                <li><a href="javascript:void(0);" onclick="showProjectDetails('project3')">Measure of Similarity between Two Vectors in a Multidimensional Space</a></li>
                 <li><a href="javascript:void(0);" onclick="showProjectDetails('project4')">Project 4</a></li>
             </ul>
         </div>
@@ -123,6 +123,7 @@
         <div id="project-details" style="display: none;">
             <!-- Project details will be displayed here -->
         </div>
+        
         
         </div>
     </div>
@@ -255,17 +256,17 @@ Example: [
     "<strong>Choosing Gradient Boosting Algorithm:</strong>",
     "<p>The selection of the <em>Gradient Boosting Algorithm</em> was not arbitrary; it was a strategic choice based on several factors:</p>",
     "<ul>",
-    "<li><em>Predictive Accuracy:</em> <br>Gradient Boosting is celebrated for its ability to provide highly accurate predictions. It excels in capturing complex, non-linear relationships in data, making it ideal for a task as intricate as predicting seed grades.</li>",
-    "<li><em>Ensemble Learning:</em> <br>This algorithm leverages ensemble learning, combining the predictive power of multiple weak learners (often decision trees) to create a strong and robust model. This ensemble approach minimizes the risk of overfitting and enhances generalization.</li>",
-    "<li><em>Flexibility:</em> <br>Gradient Boosting is highly adaptable. It allows the customization of loss functions and hyperparameters, making it versatile and well-suited to a range of problem types.</li>",
+    "<em>Predictive Accuracy:</em> <br>Gradient Boosting is celebrated for its ability to provide highly accurate predictions. It excels in capturing complex, non-linear relationships in data, making it ideal for a task as intricate as predicting seed grades.",
+    "<em>Ensemble Learning:</em> <br>This algorithm leverages ensemble learning, combining the predictive power of multiple weak learners (often decision trees) to create a strong and robust model. This ensemble approach minimizes the risk of overfitting and enhances generalization.",
+    "<em>Flexibility:</em> <br>Gradient Boosting is highly adaptable. It allows the customization of loss functions and hyperparameters, making it versatile and well-suited to a range of problem types.",
     "</ul>",
 
     "<strong>Model Purpose:</strong>",
     "<p>The primary purpose of the predictive model was to forecast seed grades based on a comprehensive set of input data. The inputs encompassed various environmental parameters, including:</p>",
     "<ul>",
-    "<li><em>Rainfall Data:</em> Information on precipitation and rainfall patterns, critical for understanding the impact of water availability on seed quality.</li>",
-    "<li><em>NDVI Values:</em> The NDVI data, sourced from NASA, played a pivotal role. It allowed us to gauge the greenness and vitality of the agricultural landscape, serving as an indicator of overall crop health and vigor.</li>",
-    "<li><em>Temperature Data:</em> Temperature is another crucial environmental variable, with direct implications for agricultural outcomes. It helped us assess the impact of temperature on seed quality.</li>",
+    "<em>Rainfall Data:</em> Information on precipitation and rainfall patterns, critical for understanding the impact of water availability on seed quality.",
+    "<em>NDVI Values:</em> The NDVI data, sourced from NASA, played a pivotal role. It allowed us to gauge the greenness and vitality of the agricultural landscape, serving as an indicator of overall crop health and vigor.",
+    "<em>Temperature Data:</em> Temperature is another crucial environmental variable, with direct implications for agricultural outcomes. It helped us assess the impact of temperature on seed quality.",
     "</ul>",
 
     "<strong>Accuracy and Example:</strong>",
@@ -295,12 +296,12 @@ Example: [
     "<strong>The Tuning Process:</strong>",
     "<p>Hyperparameter tuning involved a systematic and iterative approach to optimizing the <em>Gradient Boosting model</em>. Here's how the process unfolded:</p>",
     "<ul>",
-    "<li><em>Selection of Hyperparameters:</em> The first step was to identify the hyperparameters that were most relevant to the <em>Gradient Boosting Algorithm</em>. These could include parameters related to the number of trees in the ensemble, the depth of each tree, the learning rate, and more.</li>",
-    "<li><em>Grid Search or Random Search:</em> We employed techniques like Grid Search or Random Search to explore various combinations of hyperparameters. In Grid Search, we specified a range of values for each hyperparameter, and the search algorithm systematically tried all possible combinations. In Random Search, random combinations of hyperparameters were sampled from predefined ranges.</li>",
-    "<li><em>Model Training:</em> For each combination of hyperparameters, we trained a <em>Gradient Boosting model</em> on our dataset. This involved fitting the ensemble of decision trees to the training data while adjusting the hyperparameters as per the current combination.</li>",
-    "<li><em>Cross-Validation:</em> To assess the model's performance accurately, we used cross-validation techniques. Cross-validation involved dividing the dataset into subsets for training and testing, ensuring that the model's performance was evaluated on multiple independent samples.</li>",
-    "<li><em>Performance Metrics:</em> During each model evaluation, we measured its performance using appropriate metrics. Common metrics included Mean Squared Error (MSE), R-squared (R²), or other regression metrics, depending on the specific nature of the problem.</li>",
-    "<li><em>Comparison and Selection:</em> The performance of each model, associated with a particular set of hyperparameters, was compared. The best-performing model, in terms of predictive accuracy and generalization, was selected.</li>",
+    "<em>Selection of Hyperparameters:</em> The first step was to identify the hyperparameters that were most relevant to the <em>Gradient Boosting Algorithm</em>. These could include parameters related to the number of trees in the ensemble, the depth of each tree, the learning rate, and more.",
+    "<em>Grid Search or Random Search:</em> We employed techniques like Grid Search or Random Search to explore various combinations of hyperparameters. In Grid Search, we specified a range of values for each hyperparameter, and the search algorithm systematically tried all possible combinations. In Random Search, random combinations of hyperparameters were sampled from predefined ranges.",
+    "<em>Model Training:</em> For each combination of hyperparameters, we trained a <em>Gradient Boosting model</em> on our dataset. This involved fitting the ensemble of decision trees to the training data while adjusting the hyperparameters as per the current combination.",
+    "<em>Cross-Validation:</em> To assess the model's performance accurately, we used cross-validation techniques. Cross-validation involved dividing the dataset into subsets for training and testing, ensuring that the model's performance was evaluated on multiple independent samples.",
+    "<em>Performance Metrics:</em> During each model evaluation, we measured its performance using appropriate metrics. Common metrics included Mean Squared Error (MSE), R-squared (R²), or other regression metrics, depending on the specific nature of the problem.",
+    "<em>Comparison and Selection:</em> The performance of each model, associated with a particular set of hyperparameters, was compared. The best-performing model, in terms of predictive accuracy and generalization, was selected.",
     "</ul>",
 
     "<strong>Outcome:</strong>",
@@ -316,10 +317,10 @@ Example: [
     "<strong>Metrics Utilized:</strong>",
     "<p>To capture the nuances of the model's performance, I employed a range of metrics, each offering unique insights into its predictive capabilities. These metrics included:</p>",
     "<ul>",
-    "<li><em>Confusion Matrices:</em> Confusion matrices are fundamental tools for evaluating the performance of classification models. They provide a breakdown of the model's predictions in terms of true positives, true negatives, false positives, and false negatives. This breakdown allowed us to assess how well the model correctly classified different seed quality categories.</li>",
-    "<li><em>Precision:</em> Precision is a metric that focuses on the accuracy of positive predictions made by the model. It is defined as the ratio of true positives to the sum of true positives and false positives. Precision measures how many of the positive predictions made by the model were accurate.</li>",
-    "<li><em>Recall (Sensitivity):</em> Recall, also known as sensitivity, measures the model's ability to correctly identify all relevant instances. It is defined as the ratio of true positives to the sum of true positives and false negatives. Recall indicates how effectively the model identifies seed quality instances.</li>",
-    "<li><em>F1 Score:</em> The F1 score is the harmonic mean of precision and recall. It balances the trade-off between precision and recall, providing a single metric that captures the overall effectiveness of the model. A higher F1 score indicates a better balance between precision and recall.</li>",
+    "<em>Confusion Matrices:</em> Confusion matrices are fundamental tools for evaluating the performance of classification models. They provide a breakdown of the model's predictions in terms of true positives, true negatives, false positives, and false negatives. This breakdown allowed us to assess how well the model correctly classified different seed quality categories.",
+    "<em>Precision:</em> Precision is a metric that focuses on the accuracy of positive predictions made by the model. It is defined as the ratio of true positives to the sum of true positives and false positives. Precision measures how many of the positive predictions made by the model were accurate.",
+    "<em>Recall (Sensitivity):</em> Recall, also known as sensitivity, measures the model's ability to correctly identify all relevant instances. It is defined as the ratio of true positives to the sum of true positives and false negatives. Recall indicates how effectively the model identifies seed quality instances.",
+    "<em>F1 Score:</em> The F1 score is the harmonic mean of precision and recall. It balances the trade-off between precision and recall, providing a single metric that captures the overall effectiveness of the model. A higher F1 score indicates a better balance between precision and recall.",
     "</ul>",
 
     "<strong>Assessing Seed Quality:</strong>",
@@ -328,9 +329,9 @@ Example: [
     "<strong>Outcome and Insights:</strong>",
     "<p>Performance evaluations yielded valuable insights into the strengths and weaknesses of the model. We could determine the following:</p>",
     "<ul>",
-    "<li>The proportion of correctly predicted seed quality categories.</li>",
-    "<li>The model's ability to avoid false positives (incorrectly classifying good seeds as bad) and false negatives (incorrectly classifying bad seeds as good).</li>",
-    "<li>The overall balance between precision and recall.</li>",
+    "The proportion of correctly predicted seed quality categories.",
+    "The model's ability to avoid false positives (incorrectly classifying good seeds as bad) and false negatives (incorrectly classifying bad seeds as good).",
+    "The overall balance between precision and recall.",
     "</ul>",
 
     "<p>These insights allowed us to fine-tune the model further, if necessary, to optimize its performance for real-world use.</p>",
@@ -342,8 +343,106 @@ Example: [
 
         },
         // Add details for other projects here
-    };
+    
+    project2: {
+            title: "AzureFlow: The Automated Data Transfer Solution",
+            company: "Die Sparkass Bremen",
+            duration: "2 Month",
+            description: "The primary objective of this project was to automate the process of transferring data from our on-premises network drive to Cloud Storage. We recognized the need to improve and modernize our data management practices to stay competitive in today's data-driven landscape. Manual data transfers were not only time-consuming but also susceptible to human errors, potentially compromising the integrity and security of our data.",
+            responsibilities: [
+                "<strong>Project Leadership:</strong> I took on a leadership role within the project team, working closely with project managers and team members to define project objectives, scope, and timelines. My responsibilities included coordinating efforts and ensuring that the project stayed on track.",
+                "<strong>Solution Design:</strong> I played a significant role in designing the data transfer solution. This included selecting the appropriate tools and technologies for the automation process, evaluating  services, and creating a comprehensive architectural plan",
+                "<strong>Development and Implementation:</strong> I was responsible for the development and implementation of the automation solution. This involved scripting and coding, as well as configuring the necessary  resources to facilitate data transfer.",
+                "My responsibilities in this project were not only integral to its successful completion but have also contributed to the organization's ability to leverage the full potential of Cloud Storage for data management and analysis."
+            ],
+            Algorithm_Implementation: undefined,
+            Example: undefined
+        },
+        project3: {
+            title: "Measure of Similarity between Two Vectors in a Multidimensional Space",
+            company: "RX91 Web pvt ltd",
+            duration: "12 Month",
+            description: "This project focused on developing an intelligent system to measure the similarity between a doctor's prescription and the names of medicines stored in a database. The primary objective was to provide customers with a convenient way to discover available medicine options for online ordering. The project utilized Natural Language Processing (NLP) techniques to achieve this goal.",
+            responsibilities: [
+                "<strong>Key Project Steps and Techniques::</strong>",
+                "<p><a><strong>Text Preprocessing:</strong></a></p> The project began with extensive text preprocessing to clean and prepare the data for analysis. This included removing punctuation, special characters, and any irrelevant information from both the prescription and medicine names.",
+                "<p>",
+                "<p><a><strong>TF-IDF (Term Frequency-Inverse Document Frequency) Calculation:</strong></a></p> TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic used in natural language processing and information retrieval to reflect the importance of a term in a document relative to a collection of documents (corpus). It's often used for tasks like text analysis, document classification, and search engine ranking. The formula for TF-IDF is as follows:",
+        
+                "<strong>TF-IDF = (Term Frequency) x (Inverse Document Frequency):</strong>TF-IDF = (Term Frequency) x (Inverse Document Frequency)",
+                "<strong><em>Term Frequency (TF):</em></strong> measures how often a term appears in a document, and it's usually calculated as:" ,
+                    "<p>TF = (Number of times the term appears in the document) / (Total number of terms in the document)</p>",
+                "<strong><em>Inverse Document Frequency (IDF):</em></strong>     measures the importance of the term in the entire corpus. It's calculated as:",
+                "<p>IDF = log((Total number of documents in the corpus) / (Number of documents containing the term))</p>",
+                "<strong>Example:</strong>",
+                "<p>Let's consider a simple example with a corpus of three documents and a single term 'apple.'</p>",     
+                "<p><em>Document 1:</em></p> I like apples and bananas.",
+                "<p><em>Document 2:</em></p> Apples are delicious.",
+                "<p><em>Document 3:</em></p> Bananas and oranges are sweet.",
+                "<p>Step 1 - Term Frequency (TF):</p>",
+                "<ul>",
+                "<em>Calculate the term frequency for the term 'apple' in each document:",
+                    "TF(Document 1, 'apple') = 1/6",
+                    "TF(Document 2, 'apple') = 1/3",
+                    "TF(Document 3, 'apple') = 0 (the term does not appear)</em>",
+                    "</ul>",
+                    "<p>Step 2 - Inverse Document Frequency (IDF):</p>",
+                "<ul>",
+                "<em>Calculate the inverse document frequency for the term 'apple':",
+                    "IDF('apple') = log(3/2) ≈ 0.176 </em>", 
+                    "</ul>",
+                    "<p>Step 3 - Calculate TF-IDF:</p>",
+                "Now, calculate the TF-IDF for the term 'apple' in each document by multiplying TF and IDF:",
+                "<ul>",
+                "<em>TF-IDF(Document 1, 'apple') ≈ (1/6) * 0.176 ≈ 0.029",
+                    "TF-IDF(Document 2, 'apple') ≈ (1/3) * 0.176 ≈ 0.059",
+                    "TF-IDF(Document 3, 'apple') = 0 (since the term does not appear)</em>",
+                "</ul>",
+                "<strong>Interpretation:</strong>",
+                "<ul>",
+                "The TF-IDF score for 'apple' is highest in Document 2, suggesting that 'apple' is relatively more important in Document 2 compared to the other documents.",
+                "In Document 1, 'apple' is less important, as indicated by a lower TF-IDF score.",
+                "In Document 3, 'apple' has a TF-IDF score of 0, indicating it doesn't appear in this document.",
+                "</ul>",
+                "</p>",
+                "<p><a><strong>Vectorization of Doctor's Prescription:</strong></a></p>",
+                "The doctor's prescription was transformed into a TF-IDF vector, enabling it to be represented numerically in a multidimensional space.",
+                "The process of vectorizing a doctor's prescription involves converting the textual content of the prescription into a numerical representation, typically a TF-IDF vector, which allows the prescription to be analyzed and compared within a multidimensional space.",
+                "This TF-IDF vector can then be used to calculate the cosine similarity between the doctor's prescription and various medicine names or descriptions in the database. ",
+                "The text preprocessing, which includes tokenization (splitting text into individual words or terms), removing stopwords (common words that don't carry much meaning), and applying any other necessary text cleaning techniques.",
+                "The IDF values for each term are looked up from a previously computed IDF dataset, which is typically based on a larger corpus of medical documents. The IDF value quantifies how important a term is across a broader collection of medical documents. The formula for IDF is:",
+                "<em>IDF = log((Total number of medical documents in the corpus) / (Number of documents containing the term))</em>",
 
+                "<p><a><strong>Cosine Similarity Calculation:</strong></a></p>",
+                "<The heart of this project was the calculation of cosine similarity between the TF-IDF vector of the doctor's prescription and the TF-IDF vectors of all medicine names in the database. Cosine similarity is a crucial metric used to determine how similar two vectors are in a multidimensional space. Here's how this calculation process works:>",
+                "<p>",
+                    "Cosine Similarity Formula:Cosine similarity measures the cosine of the angle between two vectors in a multidimensional space. It quantifies how closely the vectors align in this space, with values ranging from -1 (perfectly dissimilar) to 1 (perfectly similar). The formula for cosine similarity between two vectors A and B is as follows:",
+                    "<em>",
+                    "Cosine Similarity (A, B) = (A ⋅ B) / (||A|| * ||B||)",
+                    "(A ⋅ B): The dot product of vectors A and B.",
+                    "||A||: The Euclidean norm (magnitude) of vector A.",
+                    "||B||: The Euclidean norm (magnitude) of vector B.",
+                    "</em>",
+                "</p>",
+                "<strong>Cosine Similarity Calculation Steps:</strong>",
+                "<p><li><em>",    
+                "<li>TF-IDF Vectors Preparation:</li> For each medicine name in the database and the doctor's prescription, TF-IDF vectors are prepared as described in the vectorization process. Each vector represents the content of the text (either medicine name or prescription) in a multidimensional space.",
+                "<li>Dot Product Calculation:</li> The dot product (A ⋅ B) is computed by taking the element-wise product of the TF-IDF values of corresponding terms in the two vectors and summing these products.",
+                "<li>Magnitude Computation:</li> The Euclidean norms (||A|| and ||B||) of both vectors A and B are calculated. This involves taking the square root of the sum of the squares of TF-IDF values in each vector.",
+                "<li>Cosine Similarity Calculation:</li> The cosine similarity is determined by dividing the dot product (A ⋅ B) by the product of the magnitudes (||A|| * ||B||). This computation results in a value between -1 (completely dissimilar) and 1 (completely similar).",
+                "</em></li></p>",
+                
+                "<p><a>Project Impact and Outcomes:</a></p>",
+                "The project successfully accomplished the following:",
+                ". Provided customers with a list of available medicine options based on cosine similarity calculations.",
+                ". Enabled efficient online ordering of medicines by suggesting those with the highest cosine similarity to the prescription.",
+                ". Enhanced customer experience by automating the process of medicine selection, ensuring that prescribed medicines are readily available.",
+
+            ],
+            Algorithm_Implementation: undefined,
+            Example: undefined
+        },
+    };
     // Check if the project details are currently displayed
     if (projectDetails.style.display === "block") {
         // Hide the project details with a fade-out animation
