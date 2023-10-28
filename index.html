@@ -159,7 +159,13 @@
                 </ul>
 
             </div>
-        
+            <div id="these-content" style="display: none;">
+                <p>
+                    <li>
+                    I'm working on something awesome. Stay tuned!
+                    </li>
+                </p>
+            </div>
         <div id="project-details" style="display: none;">
             <!-- Project details will be displayed here -->
         </div>
@@ -215,6 +221,23 @@ function showContactContent() {
         homeContent.style.display = "none"; // Hide the contact content
     } else {
         contactContent.style.display = "none";
+    }
+}
+
+function showtheseContent() {
+    var homeContent = document.getElementById("home-content");
+    var thesecontent = document.getElementById("these-content");
+    var header = document.querySelector("header");
+    var container = document.getElementById("container");
+    
+    header.style.display = "block"; // Display the header
+    container.style.display = "block"; // Display the container
+
+    if (thesecontent.style.display === "none") {
+        thesecontent.style.display = "block";
+        homeContent.style.display = "none"; // Hide the contact content
+    } else {
+        thesecontent.style.display = "none";
     }
 }
 
