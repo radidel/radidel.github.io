@@ -95,18 +95,27 @@
         <nav>
             <ul>
                 <li><a href="javascript:void(0);" onclick="showHomeContent()">Home</a></li>
-                <li><a href="javascript:void(0);" onclick="showProjectContent()">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#personal-details">Personal Details</a></li>
+                <li><a href="javascript:void(0);" onclick="showProjectContent()">Industry Projects</a></li>
+                <li><a href="javascript:void(0);" onclick="showContactContent()">Contact</a></li>
+                <li><a href="javascript:void(0);" onclick="showtheseContent()">Theses & University Projects</a></li>
             </ul>
         </nav>
     </header>
     <div class="container" id="container" style="display: none;">
         <div id="home-content" style="display: none;">
-            <h1>Rajendra Didel</h1>
-            <p>Data Engineer</p>
-            <p>I am Rajendra Didel, a dedicated data professional with a passion for unlocking the potential of data. I hold a Master's degree in Data Engineering from Constructor University (Jacobs University), where I deepened my expertise in data management and analysis. My journey began with a Bachelor's degree in Electronics and Communication Engineering from Rajasthan Technical University, Kota, and it was during these formative years that I developed a strong foundation in technology.</p>
-            <p>My professional journey has led me to become a skilled Data Scientist, with experience in data modeling, statistical analysis, and algorithm development. I possess a strong command of programming languages such as Python, R, and SQL, and I am adept at using data visualization tools like Power BI and matplotlib. This allows me to turn complex data into actionable insights, benefiting decision-makers and organizations.</p>
+            
+        <h1>Rajendra Didel</h1>
+        <p>Data Engineer</p>
+        <button onclick="toggleProfessionalInfo()">Show Professional Info</button>
+        <button onclick="togglePersonalInfo()">Show Personal Info</button>
+        <div id="professional-info" style="display: none;">
+            <p>Rajendra Didel is a versatile professional with a <strong>strong background</strong> in data engineering and data science. With a keen <strong>interest</strong> in technology and data-related fields, Rajendra holds the role of a Data Engineer and Data Scientist. This dual role showcases his proficiency in managing and analyzing data effectively.</p>
+            <p>In his professional journey, Rajendra Didel has been a key contributor to various data-driven projects and initiatives. He possesses a deep understanding of data modeling, statistical analysis, and algorithm development, which are critical skills in the data science realm. His expertise extends to programming languages such as Python, R, and SQL, allowing him to handle data with ease. Rajendra is also skilled in data visualization tools like Power BI and matplotlib, enabling him to convert complex data into actionable insights that drive decision-making and benefit organizations.</p>
+        </div>
+        <div id="personal-info" style="display: none;">
+            <p>Beyond his professional accomplishments, Rajendra's interests reveal a multifaceted personality. He's not just a data expert; he's also a Racketeer, indicating a passion for a specific sport or pastime. Moreover, his interest in Domestic Outdoors and Wellness reflects his enthusiasm for a balanced and healthy lifestyle. His role as a Caregiver implies a nurturing and supportive personality, while being Selective suggests a thoughtful and discerning approach to life. His optimism shines through in his outlook, which can be an asset in problem-solving and maintaining a positive work environment.</p>
+            <p>Rajendra Didel's combination of technical skills, diverse interests, and character traits makes him a valuable asset to any team or organization. His ability to bridge the gap between data engineering and data science while bringing a holistic perspective to the table can drive innovation and success in the ever-evolving data landscape.</p>
+        </div>
         </div>
 
         <div id="project-content" style="display: none;">
@@ -116,9 +125,25 @@
                 <li><a href="javascript:void(0);" onclick="showProjectDetails('project1')"> Prediction using Gradient Boosting Algorithm</a></li>
                 <li><a href="javascript:void(0);" onclick="showProjectDetails('project2')">AzureFlow: The Automated Data Transfer Solution</a></li>
                 <li><a href="javascript:void(0);" onclick="showProjectDetails('project3')">Measure of Similarity between Two Vectors in a Multidimensional Space</a></li>
-                <li><a href="javascript:void(0);" onclick="showProjectDetails('project4')">Project 4</a></li>
+                <li><a href="javascript:void(0);" onclick="showProjectDetails('project4')">ChatOps Integration: Empowering Teams with Collaboration and Automation</a></li>
             </ul>
         </div>
+            <div id="contact-content" style="display: none;">
+                <h1>Rajendra Didel</h1>
+                <p><a>Profession:</a> Data Engineer | Data Scientist</p>
+                <p><a>Interests:</a> Racketeer, Domestic Outdoors & Wellness Enthusiast</p>
+                <p>Contact:didel.rajendra83@gmail.com</p>
+                <p>Address: Bremen</p>
+                <p><em>Social Media:</em></p>
+                <ul>
+                    <li>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/rajendradidel/">rajendradidel/</a></p>
+                        <p>Github:<a href="https://github.com/radidel">radidel</a></p>
+                        <p>Instagram:<a href="https://www.instagram.com/rajendradidel">rajendradidel</a></p>
+                    </li>
+                </ul>
+
+            </div>
         
         <div id="project-details" style="display: none;">
             <!-- Project details will be displayed here -->
@@ -144,10 +169,44 @@
         homeContent.style.display = "none";
     }
 }
+function toggleProfessionalInfo() {
+            var professionalInfo = document.getElementById("professional-info");
+            var personalInfo = document.getElementById("personal-info");
+            
+            professionalInfo.style.display = "block";
+            personalInfo.style.display = "none";
+            
+        }
+
+        function togglePersonalInfo() {
+            var professionalInfo = document.getElementById("professional-info");
+            var personalInfo = document.getElementById("personal-info");
+            
+            professionalInfo.style.display = "none";
+            personalInfo.style.display = "block";
+        }
+
+function showContactContent() {
+    var homeContent = document.getElementById("home-content");
+    var contactContent = document.getElementById("contact-content");
+    var header = document.querySelector("header");
+    var container = document.getElementById("container");
+    
+    header.style.display = "block"; // Display the header
+    container.style.display = "block"; // Display the container
+
+    if (contactContent.style.display === "none") {
+        contactContent.style.display = "block";
+        homeContent.style.display = "none"; // Hide the contact content
+    } else {
+        contactContent.style.display = "none";
+    }
+}
 
 function showProjectContent() {
     var homeContent = document.getElementById("home-content");
     var projectContent = document.getElementById("project-content");
+    
     var header = document.querySelector("header");
     var container = document.getElementById("container");
     
@@ -442,6 +501,22 @@ Example: [
             Algorithm_Implementation: undefined,
             Example: undefined
         },
+    project4: {
+    title: "ChatOps Integration: Empowering Teams with Collaboration and Automation",
+    company: "",
+    duration: "",
+    description: "The project aims to develop a ChatOps integration solution that leverages Kubernetes, Azure DevOps, Docker, and containers. ChatOps is a collaborative model that brings together development, operations, and other teams to communicate, collaborate, and automate workflows through chat platforms, such as Microsoft Teams.",
+    responsibilities: [
+        "<strong>Project Leadership:</strong> Led the project team in defining objectives, scope, and timelines. Coordinated efforts to ensure the project's success.",
+        "<strong>Technology Stack:</strong> Utilized Kubernetes for container orchestration and Azure DevOps as the central platform for source control, build pipelines, release management, and continuous integration and delivery (CI/CD) workflows.",
+        "<strong>Docker and Containerization:</strong> Implemented containerization to enhance application deployment and scalability.",
+        "<strong>Chat Platform Integration:</strong> Integrated Microsoft Teams with development, operations, and monitoring tools to enable real-time notifications, collaboration, and execution of commands.",
+        "Collaborated with cross-functional teams to streamline workflows, improve productivity, and ensure efficient operations within the organization.",
+    ],
+    Algorithm_Implementation: undefined,
+    Example: undefined
+},
+
     };
     // Check if the project details are currently displayed
     if (projectDetails.style.display === "block") {
