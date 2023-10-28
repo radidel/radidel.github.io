@@ -85,6 +85,19 @@
             height: auto;
             z-index: -1;
         }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -104,28 +117,30 @@
     <div class="container" id="container" style="display: none;">
         <div id="home-content" style="display: none;">
             
-        <h1>Rajendra Didel</h1>
-        <p>Data Engineer</p>
-        <button onclick="toggleProfessionalInfo()">Show Professional Info</button>
-        <button onclick="togglePersonalInfo()">Show Personal Info</button>
-        <div id="professional-info" style="display: none;">
-            <p>Rajendra Didel is a versatile professional with a <strong>strong background</strong> in data engineering and data science. With a keen <strong>interest</strong> in technology and data-related fields, Rajendra holds the role of a Data Engineer and Data Scientist. This dual role showcases his proficiency in managing and analyzing data effectively.</p>
-            <p>In his professional journey, Rajendra Didel has been a key contributor to various data-driven projects and initiatives. He possesses a deep understanding of data modeling, statistical analysis, and algorithm development, which are critical skills in the data science realm. His expertise extends to programming languages such as Python, R, and SQL, allowing him to handle data with ease. Rajendra is also skilled in data visualization tools like Power BI and matplotlib, enabling him to convert complex data into actionable insights that drive decision-making and benefit organizations.</p>
-        </div>
-        <div id="personal-info" style="display: none;">
-            <p>Beyond his professional accomplishments, Rajendra's interests reveal a multifaceted personality. He's not just a data expert; he's also a Racketeer, indicating a passion for a specific sport or pastime. Moreover, his interest in Domestic Outdoors and Wellness reflects his enthusiasm for a balanced and healthy lifestyle. His role as a Caregiver implies a nurturing and supportive personality, while being Selective suggests a thoughtful and discerning approach to life. His optimism shines through in his outlook, which can be an asset in problem-solving and maintaining a positive work environment.</p>
-            <p>Rajendra Didel's combination of technical skills, diverse interests, and character traits makes him a valuable asset to any team or organization. His ability to bridge the gap between data engineering and data science while bringing a holistic perspective to the table can drive innovation and success in the ever-evolving data landscape.</p>
-        </div>
+            <h1>Rajendra Didel</h1>
+            <p>Data Engineer</p>
+            <button class="btn" onclick="toggleProfessionalInfo()">Show Professional Info 📊</button>
+            <button class="btn" onclick="togglePersonalInfo()">Show Personal Info 🧘</button>
+            <div id="professional-info" style="display: none;">
+                <p>Rajendra Didel is a versatile professional with a <strong>strong background</strong> in data engineering and data science. With a keen <strong>interest</strong> in technology and data-related fields, Rajendra holds the role of a Data Engineer and Data Scientist. This dual role showcases his proficiency in managing and analyzing data effectively.</p>
+                <p>In his professional journey, Rajendra Didel has been a key contributor to various data-driven projects and initiatives. He possesses a deep understanding of data modeling, statistical analysis, and algorithm development, which are critical skills in the data science realm. His expertise extends to programming languages such as Python, R, and SQL, allowing him to handle data with ease. Rajendra is also skilled in data visualization tools like Power BI and matplotlib, enabling him to convert complex data into actionable insights that drive decision-making and benefit organizations.</p>
+                <ul>
+                    <li><a class="btn" href="CV.pdf" download>Download CV 📄</a></li>
+                </ul>
+            </div>
+            <div id="personal-info" style="display: none;">
+                <p>Beyond his professional accomplishments, Rajendra's interests reveal a multifaceted personality. He's not just a data expert; he's also a Racketeer 🎾, indicating a passion for a specific sport or pastime. Moreover, his interest in Domestic Outdoors 🏞️ and Wellness 🧘 reflects his enthusiasm for a balanced and healthy lifestyle. His role as a Caregiver 🤗 implies a nurturing and supportive personality, while being Selective 🧐 suggests a thoughtful and discerning approach to life. His optimism 😄 shines through in his outlook, which can be an asset in problem-solving and maintaining a positive work environment.</p>
+            </div>
         </div>
 
         <div id="project-content" style="display: none;">
             <h1>Project Details</h1>
             <p>Explore my projects:</p>
             <ul class="project-list">
-                <li><a href="javascript:void(0);" onclick="showProjectDetails('project1')"> Prediction using Gradient Boosting Algorithm</a></li>
-                <li><a href="javascript:void(0);" onclick="showProjectDetails('project2')">AzureFlow: The Automated Data Transfer Solution</a></li>
-                <li><a href="javascript:void(0);" onclick="showProjectDetails('project3')">Measure of Similarity between Two Vectors in a Multidimensional Space</a></li>
-                <li><a href="javascript:void(0);" onclick="showProjectDetails('project4')">ChatOps Integration: Empowering Teams with Collaboration and Automation</a></li>
+                <button class="btn" onclick="showProjectDetails('project1')"> Prediction using Gradient Boosting Algorithm</button>
+                <button class="btn"  onclick="showProjectDetails('project2')">AzureFlow: The Automated Data Transfer Solution</button>
+                    <button class="btn"  onclick="showProjectDetails('project3')">Measure of Similarity between Two Vectors in a Multidimensional Space</button>
+                        <button class="btn"  onclick="showProjectDetails('project4')">ChatOps Integration: Empowering Teams with Collaboration and Automation</button>
             </ul>
         </div>
             <div id="contact-content" style="display: none;">
